@@ -1,0 +1,102 @@
+img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+figcaption {
+    width: 60%;
+    margin: 0;
+    padding: .6em 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1C2833;
+    text-align: center;
+    background: #FDFEFE;
+    background: rgba(253,254,254,0.95);
+    border: 6px solid #D35400;
+    position: absolute;
+    bottom: 2em;
+    left: 15.6%; 
+    /*figcaption is 60% of 1500px = 900px; figcaption padding is 8% of 1500px = 120px; border is 12px. Total is 1032px. 1500px - 1032px = 468px. 468px / 2 = 234px. 234px / 1500px = 15.6%*/
+}
+
+.title {
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 .2em;
+}
+
+.sub-title {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: normal;
+    display: inline-block;
+}
+
+@media (min-width: 300px) {
+
+    .title {
+        font-size: 0.875em;
+        line-height: 1em;
+    }
+
+    .sub-title {
+        font-size: 0.675em;
+        line-height: 1em;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    .title {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    .sub-title {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .title {
+        font-size: 2em;
+        line-height: 1.4em;
+    }
+
+    .sub-title {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .title {
+        font-size: 2.6em;
+        line-height: 1.6em;
+    }
+
+    .sub-title {
+        font-size: 1.5em;
+        line-height: 1.6em;
+    }
+}
