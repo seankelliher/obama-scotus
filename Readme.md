@@ -1,0 +1,1 @@
+Responsive banner with background image and foreground text. Created as a sample for food website's Thanksgiving section.
