@@ -35,7 +35,7 @@ figcaption {
 
 .title {
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: 1.5;
     font-weight: bold;
     display: inline-block;
     margin: 0 .2em;
@@ -43,7 +43,7 @@ figcaption {
 
 .sub-title {
     font-size: 1.2em;
-    line-height: 1.5em;
+    line-height: 1.5;
     font-weight: normal;
     display: inline-block;
 }
@@ -52,12 +52,12 @@ figcaption {
 
     .title {
         font-size: 0.875em;
-        line-height: 1em;
+        line-height: 1;
     }
 
     .sub-title {
         font-size: 0.675em;
-        line-height: 1em;
+        line-height: 1;
     }
 
 }
@@ -66,12 +66,12 @@ figcaption {
 
     .title {
         font-size: 1.5em;
-        line-height: 1.2em;
+        line-height: 1.2;
     }
 
     .sub-title {
         font-size: 0.9em;
-        line-height: 1.2em;
+        line-height: 1.2;
     }
 }
 
@@ -79,12 +79,12 @@ figcaption {
 
     .title {
         font-size: 2em;
-        line-height: 1.4em;
+        line-height: 1.4;
     }
 
     .sub-title {
         font-size: 1.2em;
-        line-height: 1.4em;
+        line-height: 1.4;
     }
 }
 
@@ -92,11 +92,11 @@ figcaption {
 
     .title {
         font-size: 2.6em;
-        line-height: 1.6em;
+        line-height: 1.6;
     }
 
     .sub-title {
         font-size: 1.5em;
-        line-height: 1.6em;
+        line-height: 1.6;
     }
 }
