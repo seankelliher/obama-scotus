@@ -22,11 +22,10 @@ figcaption {
     margin: 0;
     padding: .6em 4%;
     font-family: Arial, Helvetica, sans-serif;
-    color: #1C2833;
+    color: #000;
     text-align: center;
-    background: #FDFEFE;
-    background: rgba(253,254,254,0.95);
-    border: 6px solid #D35400;
+    background: #ffb300;
+    border: 6px solid #fafafa;
     position: absolute;
     bottom: 2em;
     left: 15.6%; 
