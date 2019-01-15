@@ -32,14 +32,14 @@ figcaption {
 
 .title {
     font-family: 'Francois One', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     display: inline-block;
     margin: 0 .2em;
 }
 
 .sub-title {
     font-family: 'Merriweather', serif;
-    font-weight: normal;
+    font-weight: 400;
     display: inline-block;
 }
 
