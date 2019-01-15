@@ -20,20 +20,19 @@ figcaption {
     width: 60%;
     margin: 0;
     padding: .6em 4%;
-    color: #000;
     text-align: center;
     background: #ffb300;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%; /*Keeps figcaption centered*/
+    left: 50%; /*Keeps figcaption centered*/
+    transform: translate(-50%, -50%); /*Keeps figcaption centered*/
 }
 
 .title {
     font-family: 'Francois One', sans-serif;
     font-weight: 600;
     display: inline-block;
-    margin: 0 .2em;
+    margin: 0 .2em; /*adds space before, after "Thanksgiving"*/
 }
 
 .sub-title {
@@ -57,7 +56,6 @@ figcaption {
         font-size: 0.675em;
         line-height: 1;
     }
-
 }
 
 @media (min-width: 625px) {
