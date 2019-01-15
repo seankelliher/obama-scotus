@@ -32,8 +32,6 @@ figcaption {
 
 .title {
     font-family: 'Francois One', sans-serif;
-    font-size: 2em;
-    line-height: 1.5;
     font-weight: bold;
     display: inline-block;
     margin: 0 .2em;
@@ -41,8 +39,6 @@ figcaption {
 
 .sub-title {
     font-family: 'Merriweather', serif;
-    font-size: 1.2em;
-    line-height: 1.5;
     font-weight: normal;
     display: inline-block;
 }
@@ -50,7 +46,7 @@ figcaption {
 @media (min-width: 300px) {
 
     .title {
-        font-size: 0.875em;
+        font-size: 0.825em;
         line-height: 1;
     }
 
@@ -61,7 +57,7 @@ figcaption {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 625px) {
 
     .title {
         font-size: 1.5em;
