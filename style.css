@@ -25,9 +25,9 @@ figcaption {
     background: #ffb300;
     border: 6px solid #fafafa;
     position: absolute;
-    bottom: 2em;
-    left: 15.6%; 
-    /*figcaption is 60% of 1500px = 900px; figcaption padding is 8% of 1500px = 120px; border is 12px. Total is 1032px. 1500px - 1032px = 468px. 468px / 2 = 234px. 234px / 1500px = 15.6%*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .title {
