@@ -1,26 +1,30 @@
-# Thanksgiving Banner
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
+# Banner Obama Scotus
 
-Responsive banner with background image and foreground text. Created as a sample for food website's Thanksgiving section.
+Interactive banner depicting President Barack Obama's influence on Supreme Court nominees.
 
-## Authors
+## Project Status
 
-* **Sean Kelliher** - [seankelliher](https://github.com/seankelliher)
+This project is currently in development. I am rebuilding this based on an earlier banner.
 
-## Deployment
+## Project Screen Shot(s)
 
-All you need is a web browser. Code works in a local or remote environment.
+Will be added when project is complete.
 
-## Built With
+## Installation and Setup Instructions
 
-* CSS
-* HTML
+This is a static component. All you need is a web browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
 
-## License
+## Reflection
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+Will be added when project is complete.
 
 ## Acknowledgments
 
-* Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
-* Design guidance from Google's [Material Design](https://material.io/design).
+* Supreme Court hostory from [Wikipedia](https://www.wikipedia.org).
+* Photo from the [Barack Obama Presidential Library](https://www.obamalibrary.gov).
+* Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
+* JavaScript guidance from [JSLint](http://jslint.com).
+* Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/trends).
 * Fonts from [Google Fonts](https://fonts.google.com).
+* Shields from [Shields](https://shields.io).
