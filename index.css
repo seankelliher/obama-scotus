@@ -1,10 +1,12 @@
 img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
@@ -17,92 +19,62 @@ figure {
 }
 
 figcaption {
-    width: 60%;
+    width: 25%;
     margin: 0;
-    padding: .6em 4%;
+    padding: .5em;
     text-align: center;
-    background: #ffb300;
+    background: #000;
+    border: 4px solid #FFF;
     position: absolute;
-    top: 50%; /*Keeps figcaption centered*/
-    left: 50%; /*Keeps figcaption centered*/
-    transform: translate(-50%, -50%); /*Keeps figcaption centered*/
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%); /*Keeps figcaption centered*/
 }
 
-.title {
-    font-family: 'Francois One', sans-serif;
-    font-weight: 400;
-    display: inline-block;
-    margin: 0 .2em; /*adds space before, after "Thanksgiving"*/
+section {
+    width: 20%;
+    margin: 0;
+    padding: .5em 2.5%;
+    background: #FFF;
+    background: rgba(255, 255, 255, .95);
+    border: 1px solid #757575;
+    position: absolute;
 }
 
-.sub-title {
+/*Fonts*/
+figcaption {
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    display: inline-block;
+    line-height: 1.5;
+    color: #FFF;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 @media (min-width: 300px) {
-
-    figcaption {
-        border: 2px solid #c68400;
-    }
-
-    .title {
-        font-size: 0.825em;
-        line-height: 1;
-    }
-
-    .sub-title {
-        font-size: 0.675em;
-        line-height: 1;
+    figcaption, p {
+        font-size: .875em;
     }
 }
 
-@media (min-width: 625px) {
-
-    figcaption {
-        border: 4px solid #c68400;
-    }
-
-    .title {
-        font-size: 1.5em;
-        line-height: 1.2;
-    }
-
-    .sub-title {
-        font-size: 0.9em;
-        line-height: 1.2;
+@media (min-width: 600px) {
+    figcaption, p {
+        font-size: 1em;
     }
 }
 
 @media (min-width: 900px) {
-
     figcaption {
-        border: 6px solid #c68400;
-    }
-
-    .title {
-        font-size: 2em;
-        line-height: 1.4;
-    }
-
-    .sub-title {
         font-size: 1.2em;
-        line-height: 1.4;
     }
 }
 
 @media (min-width: 1200px) {
-
-    /*figcaption border inherited*/
-
-    .title {
-        font-size: 2.6em;
-        line-height: 1.6;
-    }
-
-    .sub-title {
-        font-size: 1.5em;
-        line-height: 1.6;
+    figcaption {
+        font-size: 1.4em;
     }
 }
