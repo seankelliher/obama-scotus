@@ -6,8 +6,8 @@ const nomineeInfo = [
         position: "bubble2",
         headline: "Barack Obama and the Justices",
         paragraph: [
-            "The Senator from Illinois and 44th President",
-            "worked to influence the Supreme Court.",
+            "As a Senator from Illinois and 44th President,",
+            "Obama worked to shape the Supreme Court.",
             "He both won and lost along the way."
         ].join(" "),
         credit: "Photo: Pete Souza",
@@ -23,7 +23,7 @@ const nomineeInfo = [
         position: "bubble3",
         headline: "John Roberts",
         paragraph: [
-            "In 2005, Senator Obama of Illinois opposes George W. Bush's",
+            "In 2005, Senator Obama opposes George W. Bush's",
             "Supreme Court nominee John Roberts.",
             "Roberts is confirmed anyway and later becomes Chief Justice."
         ].join(" "),
@@ -59,7 +59,7 @@ const nomineeInfo = [
             "In May 2009, now President Obama nominates Sonia Sotomayor",
             "of the US Court of Appeals for the Second Circuit",
             "to the Supreme Court.",
-            "She is confirmed and replaces the retiring David H. Souter.",
+            "She is confirmed and replaces retiring Justice David H. Souter.",
             "Sotomayor was one of four finalists for the job; all women."
         ].join(" "),
         credit: "Photo: Pete Souza",
@@ -78,7 +78,7 @@ const nomineeInfo = [
             "In May 2010, President Obama nominates Elena Kagan,",
             "the Solicitor General of the United States,",
             "to the Supreme Court.",
-            "She is confirmed and replaces the retiring John Paul Stevens.",
+            "She is confirmed and replaces retiring Justice John Paul Stevens.",
             "Kagan was a candidate to replace Justice Souter in 2009."
         ].join(" "),
         credit: "Photo: Pete Souza",
@@ -94,7 +94,7 @@ const nomineeInfo = [
         position: "bubble1",
         headline: "Antonin Scalia",
         paragraph: [
-            "In February, 2016, Justice Antonin Scalia is found dead",
+            "In February of 2016, Justice Antonin Scalia is found dead",
             "while vacationing at Cibolo Creek Ranch near Marfa, Texas."
         ].join(" "),
         credit: "Photo: Stephen Masker",
@@ -112,7 +112,7 @@ const nomineeInfo = [
         paragraph: [
             "In March, Obama nominates Merrick Garland,",
             "Chief Judge of the US Court of Appeals",
-            "for the District of Columbia Circuit to replace Justice Scalia."
+            "for the District of Columbia Circuit, to replace Justice Scalia."
         ].join(" "),
         credit: "Photo: Pete Souza",
         source: [
@@ -127,7 +127,7 @@ const nomineeInfo = [
         position: "bubble4",
         headline: "Mitch McConnell",
         paragraph: [
-            "Senate Majority Leader Mitch McConnell refuses to proceed",
+            "But Senate Majority Leader Mitch McConnell refuses to proceed",
             "with a confirmation hearing,",
             "citing that Obama is in his final year in office.",
             "Judge Garland's nomination is held open for 293 days.",
@@ -146,11 +146,12 @@ const nomineeInfo = [
         position: "bubble3",
         headline: "Neil Gorsuch",
         paragraph: [
-            "President Trump wins the election",
-            "and nominates Judge Neil Gorsuch",
+            "President Obama leaves office after serving two terms.",
+            "Donald Trump beats Hillary Clinton to become the 45th President.",
+            "Trump nominates Judge Neil Gorsuch",
             "of the U.S. Court of Appeals for the Tenth Circuit.",
-            "Judge Gorsuch is confirmed by a vote of 54–45.",
-            "He assumes Justice Scalia's position."
+            "Gorsuch is confirmed by a vote of 54–45.",
+            "In April of 2017, he assumes Justice Scalia's position."
         ].join(" "),
         credit: "White House photographer",
         source: [
@@ -169,7 +170,8 @@ const nomineeInfo = [
             "(2) Obama years: Pete Souza.",
             "(3) Antonin Scalia photo: Stephen Masker.",
             "(4) Capitol photo: Greg Willis.",
-            "(5) Trump years: White House photographer."
+            "(5) Trump years: White House photographer.",
+            "Here: Obama congratulates newly confirmed Justice Elena Kagan."
         ].join(" "),
         credit: "Photo: Pete Souza",
         source: [
