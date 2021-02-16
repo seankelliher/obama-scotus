@@ -1,4 +1,5 @@
 import {createScene} from "./app/scenes.js";
+import {fillCircle} from "./app/circles.js";
 
 //When DOM loads, invoke function.
 document.addEventListener("DOMContentLoaded", function () {
@@ -23,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
             : (Number(currentScene) + 1)
         );
 
-        //Invoke function to create scene.
+        //Invoke functions to create scene and fill circles.
         createScene(newScene);
+        fillCircle(currentScene, newScene);
     });
 });
