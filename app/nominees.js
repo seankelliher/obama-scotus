@@ -3,10 +3,11 @@ const nomineeInfo = [
         image: "obama-chats-with-justices",
         alt: "Barack Obama chats with Supreme Court justices",
         position: "bubble2",
-        headline: "How Obama Shaped the Supreme Court",
+        headline: "Barack Obama and the Justices",
         paragraph: [
-            "The people he opposed",
-            "and nominated."
+            "The Senator from Illinois and 44th President",
+            "worked to influence the Supreme Court.",
+            "He both won and lost along the way."
         ].join(" "),
         credit: "Photo: Pete Souza",
         source: [
