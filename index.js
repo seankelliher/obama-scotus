@@ -4,16 +4,26 @@ import {createScene} from "./app/scenes.js";
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
-    let count;
-    count = 0;
-    createScene(count);//loads first scene (Obama with justices).
+    createScene(0);//loads first scene (Obama with justices).
 
     //Get the figure.
     const figure = document.querySelector("figure");
 
     //Listen for clicks.
     figure.addEventListener("click", function () {
-        count = count + 1;
-        createScene(count);
+
+        //Get image, current scene.
+        const img = document.querySelector("img");
+        const currentScene = img.dataset.sceneNumber;
+
+        //Get new scene (if last scene, get first).
+        const newScene = (
+            Number(currentScene) === 9
+            ? (0)
+            : (Number(currentScene) + 1)
+        );
+
+        //Invoke function to create scene.
+        createScene(newScene);
     });
 });
