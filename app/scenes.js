@@ -1,6 +1,6 @@
 import {nomineeInfo} from "./nominees.js";
 
-function createScene(count) {
+function createScene(newScene) {
     "use strict";
 
     //Get elements.
@@ -10,13 +10,14 @@ function createScene(count) {
     const section = document.querySelector("section");
 
     //Place images, attributes, or text.
-    img.src = `images/${nomineeInfo[count].image}.jpg`;
-    img.alt = `${nomineeInfo[count].alt}`;
-    htag.textContent = `${nomineeInfo[count].headline}`;
-    ptag.textContent = `${nomineeInfo[count].paragraph}`;
+    img.src = `images/${nomineeInfo[newScene].image}.jpg`;
+    img.alt = `${nomineeInfo[newScene].alt}`;
+    img.dataset.sceneNumber = `${nomineeInfo[newScene].scene}`;
+    htag.textContent = `${nomineeInfo[newScene].headline}`;
+    ptag.textContent = `${nomineeInfo[newScene].paragraph}`;
 
     //Place position.
-    section.id = `${nomineeInfo[count].position}`;
+    section.id = `${nomineeInfo[newScene].position}`;
 }
 
 export {createScene};
