@@ -5,12 +5,11 @@ import {fillCircle} from "./app/circles.js";
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
-    createScene(0);//loads first scene (Obama with justices).
+    //Load first scene (Obama with justices).
+    createScene(0);
 
-    //Get the figure.
+    //Get the figure, listen for clicks.
     const figure = document.querySelector("figure");
-
-    //Listen for clicks.
     figure.addEventListener("click", function () {
 
         //Get image, current scene.
@@ -27,5 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
         //Invoke functions to create scene and fill circles.
         createScene(newScene);
         fillCircle(currentScene, newScene);
+    });
+
+    //Get the svg element #circles-sm, listen for clicks.
+    const circles = document.getElementById("circles-sm");
+    circles.addEventListener("click", function (event) {
+
+        if (event.target.nodeName === "circle") {
+
+            //Get image, current scene.
+            const img = document.querySelector("img");
+            const currentScene = img.dataset.sceneNumber;
+
+            //Get new scene (based on what user clicked).
+            const newScene = Number(event.target.id.substring(6, 7));
+
+            //Invoke functions to create scene and fill circles.
+            createScene(newScene);
+            fillCircle(currentScene, newScene);
+        }
     });
 });
