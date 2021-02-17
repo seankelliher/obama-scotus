@@ -5,29 +5,15 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2em 2em 0 2em;
+    padding: 0;
     background: #000;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
-}
-
-nav {
-    width: 100%;
-    height: 2em;
-    margin: 0;
-    padding: 0;
-    flex: initial; /*flex: 0 1 auto*/
-    background: #000;
-}
-
-svg {
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 figure {
@@ -36,16 +22,30 @@ figure {
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
     position: relative;
+    cursor: pointer;
+}
+
+nav {
+    width: 70%;
+    margin: 0;
+    padding: 0 15%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /*main axis*/
+    align-items: center; /*cross axis*/
 }
 
 section {
-    width: 40%;
+    width: 90%;
+    height: 10em;
     margin: 0;
-    padding: .5em 2%;
-    background: #F2F2F2;
-    background: rgba(242, 242, 242, .90);
-    position: absolute;
-    /*transform: translate(-50%, -80%); Keeps figcaption centered*/
+    padding: 0 30% 0 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: stretch; /*cross axis*/
 }
 
 /*Fonts*/
