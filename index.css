@@ -53,12 +53,15 @@ p {
     font-family: 'Merriweather', serif;
     font-weight: 400;
     line-height: 1.8;
+    color: #FFF;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     line-height: 1.2;
+    margin-bottom: .25em;
+    color: #FFF;
 }
 
 @media (min-width: 300px) {
