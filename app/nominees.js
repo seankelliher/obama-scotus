@@ -3,7 +3,6 @@ const nomineeInfo = [
         image: "obama-chats-with-justices",
         alt: "Barack Obama chats with Supreme Court justices",
         scene: 0,
-        position: "bubble2",
         headline: "Barack Obama and the Justices",
         paragraph: [
             "As a Senator from Illinois and 44th President,",
@@ -20,7 +19,6 @@ const nomineeInfo = [
         image: "john-roberts-sworn-in",
         alt: "John Roberts sworn in as a Supreme Court justice",
         scene: 1,
-        position: "bubble3",
         headline: "John Roberts",
         paragraph: [
             "In 2005, Senator Obama opposes George W. Bush's",
@@ -37,7 +35,6 @@ const nomineeInfo = [
         image: "bush-nominates-samuel-alito",
         alt: "George Bush with Samuel Alito at announcement",
         scene: 2,
-        position: "bubble4",
         headline: "Samuel Alito",
         paragraph: [
             "In 2006, Senator Obama opposes Bush's next Supreme Court nominee,",
@@ -53,7 +50,6 @@ const nomineeInfo = [
         image: "obama-biden-meet-sotamayor",
         alt: "Barack Obama and Joe Biden meet Sonia Sotomayor about nomination",
         scene: 3,
-        position: "bubble3",
         headline: "Sonia Sotomayor",
         paragraph: [
             "In May 2009, now President Obama nominates Sonia Sotomayor",
@@ -72,7 +68,6 @@ const nomineeInfo = [
         image: "obama-meets-kagan",
         alt: "Barack Obama meet Elena Kagan about nomination",
         scene: 4,
-        position: "bubble4",
         headline: "Elena Kagan",
         paragraph: [
             "In May 2010, President Obama nominates Elena Kagan,",
@@ -91,7 +86,6 @@ const nomineeInfo = [
         image: "antonin-scalia-smiles",
         alt: "Antonin Scalia smiles",
         scene: 5,
-        position: "bubble1",
         headline: "Antonin Scalia",
         paragraph: [
             "In February of 2016, Justice Antonin Scalia is found dead",
@@ -107,7 +101,6 @@ const nomineeInfo = [
         image: "obama-biden-nominate-garland",
         alt: "Barack Obama and Joe Biden with Merrick Garland at announcement",
         scene: 6,
-        position: "bubble2",
         headline: "Merrick Garland",
         paragraph: [
             "In March, Obama nominates Merrick Garland,",
@@ -124,7 +117,6 @@ const nomineeInfo = [
         image: "us-capitol-building",
         alt: "exterior of the United States Capitol building",
         scene: 7,
-        position: "bubble4",
         headline: "Mitch McConnell",
         paragraph: [
             "But Senate Majority Leader Mitch McConnell refuses to proceed",
@@ -143,15 +135,12 @@ const nomineeInfo = [
         image: "trump-nominates-gorsuch",
         alt: "Donald Trump with Neil Gorsuch and his wife at announcement",
         scene: 8,
-        position: "bubble3",
         headline: "Neil Gorsuch",
         paragraph: [
-            "President Obama leaves office after serving two terms.",
-            "Donald Trump beats Hillary Clinton to become the 45th President.",
-            "Trump nominates Judge Neil Gorsuch",
+            "Donald Trump is elected and nominates Judge Neil Gorsuch",
             "of the U.S. Court of Appeals for the Tenth Circuit.",
-            "Gorsuch is confirmed by a vote of 54–45.",
-            "In April of 2017, he assumes Justice Scalia's position."
+            "Gorsuch is confirmed by a vote of 54–45",
+            "and assumes Justice Scalia's position April, 2017."
         ].join(" "),
         credit: "White House photographer",
         source: [
@@ -163,7 +152,6 @@ const nomineeInfo = [
         image: "obama-congratulates-kagan",
         alt: "Obama embraces Kagan in Oval Office and she is confirmed",
         scene: 9,
-        position: "bubble3",
         headline: "Photographs",
         paragraph: [
             "(1) Bush years: Paul Morse.",
@@ -180,6 +168,5 @@ const nomineeInfo = [
         ].join("")
     }
 ];
-
 
 export {nomineeInfo};
