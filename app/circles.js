@@ -1,3 +1,5 @@
+//Makes circle red when its scene displays.
+//Returns circle to blue when its scene no longer displays.
 function fillCircle(currentScene, newScene) {
     "use strict";
 
