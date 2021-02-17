@@ -28,12 +28,25 @@ figure {
 nav {
     width: 70%;
     margin: 0;
-    padding: 0 15%;
+    padding: .5em 15% 0 15%;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: center; /*main axis*/
     align-items: center; /*cross axis*/
+}
+
+/*ID for SVG (small circles)*/
+#circles-sm {
+    width: 600px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/*Shape in SVG*/
+circle {
+    cursor: pointer;
 }
 
 section {
