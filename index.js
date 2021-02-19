@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
     //Load first scene (Obama with justices).
     createScene(0);
 
-    //Get the figure, listen for clicks.
-    const figure = document.querySelector("figure");
-    figure.addEventListener("click", function () {
+    //Get the large figure, listen for clicks.
+    const pano = document.querySelector("#pano");
+    pano.addEventListener("click", function () {
 
         //Get image, current scene.
-        const img = document.querySelector("img");
-        const currentScene = img.dataset.sceneNumber;
+        const panoImg = document.querySelector("#pano img");
+        const currentScene = panoImg.dataset.sceneNumber;
 
         //Get new scene (if last scene, get first).
         const newScene = (
@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target.nodeName === "circle") {
 
             //Get image, current scene.
-            const img = document.querySelector("img");
-            const currentScene = img.dataset.sceneNumber;
+            const panoImg = document.querySelector("#pano img");
+            const currentScene = panoImg.dataset.sceneNumber;
 
             //Get new scene (based on what user clicked).
             const newScene = Number(event.target.id.substring(6, 7));
