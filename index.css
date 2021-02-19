@@ -16,12 +16,12 @@ img {
     align-items: flex-start; /*cross axis*/
 }
 
-figure {
+/*ID for large figure*/
+#pano {
     width: 100%;
     margin: 0;
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
-    position: relative;
     cursor: pointer;
 }
 
@@ -44,21 +44,32 @@ nav {
     padding: 0;
 }
 
-/*Shape in SVG*/
+/*The circles themselves.*/
 circle {
     cursor: pointer;
 }
 
 section {
-    width: 90%;
-    height: 10em;
+    width: 65%;
     margin: 0;
-    padding: 0 30% 0 5%;
+    padding: 0 0 0 5%;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
-    align-items: stretch; /*cross axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
+/*ID for smaller figure*/
+#thumb {
+    width: 20%;
+    margin: 0;
+    padding: .5em 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; /*main axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
 /*Fonts*/
