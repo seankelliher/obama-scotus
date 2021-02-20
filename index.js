@@ -1,5 +1,6 @@
 import {createScene} from "./app/scenes.js";
 import {fillCircle} from "./app/circles.js";
+import {showPrompt} from "./app/prompts.js";
 
 //When DOM loads, invoke function.
 document.addEventListener("DOMContentLoaded", function () {
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Load first scene (Obama with justices).
     createScene(0);
+    showPrompt(0);
 
     //Get the large figure, listen for clicks.
     const pano = document.querySelector("#pano");
@@ -26,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //Invoke functions to create scene and fill circles.
         createScene(newScene);
         fillCircle(currentScene, newScene);
+        showPrompt(newScene);
     });
 
     //Get the svg element #circles-sm, listen for clicks.
