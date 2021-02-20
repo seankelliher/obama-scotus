@@ -6,14 +6,27 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
+    height: auto;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0;
     background: #000;
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
+}
+
+@media (min-width: 300px) {
+    .container {
+        flex-flow: column nowrap;  
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-flow: row wrap;
+    }
 }
 
 /*ID for large figure*/
@@ -32,7 +45,6 @@ img {
     height: 48px;
     margin: 0;
     padding: 0;
-    background: #F2F2F2;
     background: rgba(242, 242, 242, .8);
     border-radius: 50%;
     position: absolute;
@@ -66,14 +78,26 @@ img {
 }
 
 nav {
-    width: 70%;
     margin: 0;
-    padding: .5em 15% 0 15%;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
     justify-content: center; /*main axis*/
     align-items: center; /*cross axis*/
+}
+
+@media (min-width: 300px) {
+    nav {
+        width: 90%;
+        padding: 1em 5%;
+    }
+}
+
+@media (min-width: 600px) {
+    nav {
+        width: 70%;
+        padding: .5em 15% 0 15%;
+    }
 }
 
 /*ID for SVG (small circles)*/
@@ -90,9 +114,8 @@ circle {
 }
 
 section {
-    width: 65%;
     margin: 0;
-    padding: 0 0 0 5%;
+    padding: 0 5%;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -100,16 +123,41 @@ section {
     align-items: flex-start; /*cross axis*/
 }
 
-/*ID for smaller figure*/
+@media (min-width: 300px) {
+    section {
+        width: 90%;
+    }
+}
+
+@media (min-width: 600px) {
+    section {
+        width: 65%;
+    }
+}
+
 #thumb {
-    width: 20%;
-    margin: 0;
-    padding: .5em 5%;
-    flex: initial; /*flex: 0 1 auto*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+        margin: 0;
+        flex: initial; /*flex: 0 1 auto*/
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start; /*cross axis*/
+}
+
+/*ID for smaller figure*/
+@media (min-width: 300px) {
+    #thumb {
+        width: 90%;
+        padding: 1em 5%;
+        justify-content: center; /*main axis*/
+    }
+}
+
+@media (min-width: 600px) {
+    #thumb {
+        width: 20%;
+        padding: 1em 5% 1em 0;
+        justify-content: flex-end; /*main axis*/
+    }
 }
 
 /*Fonts*/
@@ -143,11 +191,5 @@ h2 {
 @media (min-width: 900px) {
     h2 {
         font-size: 1.2em;
-    }
-}
-
-@media (min-width: 1200px) {
-    h2 {
-        font-size: 1.4em;
     }
 }
