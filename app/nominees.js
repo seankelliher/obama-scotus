@@ -9,7 +9,7 @@ const nomineeInfo = [
             "Obama worked to shape the Supreme Court.",
             "He both won and lost along the way. Photo: Pete Souza."
         ].join(" "),
-        thumbImage: "transparent-image", //barack-obama-portrait1
+        thumbImage: "barack-obama-portrait",
         thumbAlt: "portrait photo of Barack Obama as Senator"
     },
     {
@@ -47,7 +47,7 @@ const nomineeInfo = [
             "In May 2009, now President Obama nominates Sonia Sotomayor",
             "of the US Court of Appeals for the Second Circuit.",
             "She is confirmed and replaces retiring Justice David H. Souter.",
-            "Sotomayor was among four finalists for the job; all women.",
+            "Sotomayor was among four finalists; all women.",
             "Photo: Pete Souza."
         ].join(" "),
         thumbImage: "sonia-sotamayor-portrait",
@@ -136,10 +136,11 @@ const nomineeInfo = [
             "except Justice Gorsuch: Franz Jantzen, and",
             "Judge Garland: US Court of Appeals for the DC Circuit.",
             "(B) Portrait of Senator McConnell: his staff.",
-            "(C) Above: Obama congratulates a confirmed Elena Kagan.",
+            "(C) Portrait of Barack Obama: Pete Souza.",
+            "(D) Above: Obama congratulates a confirmed Elena Kagan.",
             "Photo: Pete Souza."
         ].join(" "),
-        thumbImage: "transparent-image", //barack-obama-portrait2
+        thumbImage: "transparent-image",
         thumbAlt: "portrait photo of Barack Obama as President"
     }
 ];
