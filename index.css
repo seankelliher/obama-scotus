@@ -23,6 +23,46 @@ img {
     padding: 0;
     flex: initial; /*flex: 0 1 auto*/
     cursor: pointer;
+    position: relative;
+}
+
+/*IDs for "next" and "replay" icons*/
+#next, #replay {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    background: #F2F2F2;
+    background: rgba(242, 242, 242, .8);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /*main axis*/
+    align-items: center; /*cross axis*/
+}
+
+/*Makes icon invisible*/
+.invisible {
+    opacity: 0;
+}
+
+/*Fades icon in*/
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/*Animation for #next, #replay*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 nav {
