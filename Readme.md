@@ -1,5 +1,5 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
-# Banner Obama Scotus
+# Obama and SCOTUS Nominees
 
 Interactive gallery of Barack Obama's history with Supreme Court nominees.
 
