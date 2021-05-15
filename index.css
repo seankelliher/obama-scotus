@@ -163,13 +163,13 @@ section {
 
 /*Fonts*/
 p {
-    font-family: 'Merriweather', serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 1.8;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: .25em;
