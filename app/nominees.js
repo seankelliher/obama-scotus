@@ -3,10 +3,10 @@ const nomineeInfo = [
         panoImage: "obama-chats-with-justices",
         panoAlt: "Barack Obama chats with Supreme Court justices",
         scene: 0,
-        headline: "Barack Obama and the Justices",
+        headline: "Obama and the Justices",
         paragraph: [
             "As a Senator from Illinois and 44th President,",
-            "Obama worked to shape the Supreme Court.",
+            "Barack Obama worked to shape the Supreme Court.",
             "He both won and lost along the way. Photo: Pete Souza."
         ].join(" "),
         thumbImage: "barack-obama-portrait",
