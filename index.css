@@ -7,9 +7,9 @@ img {
 .container {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 1.5em auto 0 auto;
     padding: 0;
-    background: #FAFAFA; /*grey 50*/
+    background: #F5F5F5; /*grey 100*/
     display: flex;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
@@ -134,11 +134,11 @@ section {
 }
 
 #thumb {
-        margin: 0;
-        flex: initial; /*flex: 0 1 auto*/
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start; /*cross axis*/
+    margin: 0;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start; /*cross axis*/
 }
 
 /*ID for smaller figure*/
@@ -163,6 +163,7 @@ p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 1.8;
+    margin-top: .25em;
 }
 
 h2 {
@@ -173,19 +174,47 @@ h2 {
 }
 
 @media (min-width: 300px) {
-    p, h2 {
-        font-size: .875em;
+    p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 400px) {
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 500px) {
+    h2 {
+        font-size: 1.4em;
     }
 }
 
 @media (min-width: 600px) {
     h2 {
-        font-size: 1em;
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 700px) {
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 800px) {
+    h2 {
+        font-size: 1.5em;
     }
 }
 
 @media (min-width: 900px) {
     h2 {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
 }
