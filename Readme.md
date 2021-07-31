@@ -5,13 +5,14 @@ Interactive gallery of Barack Obama's history with Supreme Court nominees.
 
 ## Project Screen Shots
 
-![screen shot of project](/screenshots/obama-scotus-screenshot1.jpg)
+* Starting view - Obama and Justices.
+![screen shot of project](/screenshots/obama-scotus-screenshot1.png?s=600)
 
-![screen shot of project](/screenshots/obama-scotus-screenshot2.jpg)
+* View with Justice Roberts.
+![screen shot of project](/screenshots/obama-scotus-screenshot2.png?s=600)
 
-![screen shot of project](/screenshots/obama-scotus-screenshot3.jpg)
-
-![screen shot of project](/screenshots/obama-scotus-screenshot4.jpg)
+* View with Justice Sotomayor.
+![screen shot of project](/screenshots/obama-scotus-screenshot3.png?s=600)
 
 ## Installation and Setup Instructions
 
