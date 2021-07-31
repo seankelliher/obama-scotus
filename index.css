@@ -9,7 +9,8 @@ img {
     max-width: 900px;
     margin: 1.5em auto 0 auto;
     padding: 0;
-    background: #F5F5F5; /*grey 100*/
+    background: #FAFAFA; /*grey 50*/
+    border: 2px solid #EEE; /*grey 200*/
     display: flex;
     justify-content: flex-start; /*main axis*/
     align-items: flex-start; /*cross axis*/
@@ -29,9 +30,9 @@ img {
 
 /*ID for large figure*/
 #pano {
-    width: 100%;
+    /*width: 95%;*/
     margin: 0;
-    padding: 0;
+    padding: 1em 1em 0 1em;
     flex: initial; /*flex: 0 1 auto*/
     cursor: pointer;
     position: relative;
