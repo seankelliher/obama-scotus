@@ -7,18 +7,18 @@ img {
 .container {
     width: 100%;
     max-width: 900px;
-    margin: 1.5em auto 0 auto;
+    margin: 1.5em auto 0; /* longhand is 1.5em auto 0 auto */
     padding: 0;
-    background: #FAFAFA; /*grey 50*/
-    border: 2px solid #EEE; /*grey 200*/
+    background: #fafafa; /* grey 50 */
+    border: 2px solid #eee; /* grey 200 */
     display: flex;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 @media (min-width: 300px) {
     .container {
-        flex-flow: column nowrap;  
+        flex-flow: column nowrap;
     }
 }
 
@@ -28,23 +28,24 @@ img {
     }
 }
 
-/*ID for large figure*/
+/* ID for large figure */
 #pano {
-    /*width: 95%;*/
+    /* width: 95%; */
     margin: 0;
-    padding: 1em 1em 0 1em;
-    flex: initial; /*flex: 0 1 auto*/
+    padding: 1em 1em 0; /* longhand is 1em 1em 0 1em */
+    flex: initial; /* flex: 0 1 auto */
     cursor: pointer;
     position: relative;
 }
 
-/*IDs for "next" and "replay" icons*/
-#next, #replay {
+/* IDs for "next" and "replay" icons */
+#next,
+#replay {
     width: 48px;
     height: 48px;
     margin: 0;
     padding: 0;
-    background: rgba(242, 242, 242, .8);
+    background: rgba(242 242 242 / 80%);
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -52,37 +53,38 @@ img {
     transform: translate(-50%, -50%);
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; /*main axis*/
-    align-items: center; /*cross axis*/
+    justify-content: center; /* main axis */
+    align-items: center; /* cross axis */
 }
 
-/*Makes icon invisible*/
+/* Makes icon invisible */
 .invisible {
     opacity: 0;
 }
 
-/*Fades icon in*/
+/* Fades icon in */
 .fade-in {
-    animation: fadeIn 2s ease-in-out;
+    animation: fade-in 2s ease-in-out;
 }
 
-/*Animation for #next, #replay*/
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+/* Animation for #next, #replay */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 nav {
     margin: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; /*main axis*/
-    align-items: center; /*cross axis*/
+    justify-content: center; /* main axis */
+    align-items: center; /* cross axis */
 }
 
 @media (min-width: 300px) {
@@ -95,11 +97,11 @@ nav {
 @media (min-width: 600px) {
     nav {
         width: 70%;
-        padding: .5em 15% 0 15%;
+        padding: 0.5em 15% 0; /* longhand is .5em 15% 0 15% */
     }
 }
 
-/*ID for SVG (small circles)*/
+/* ID for SVG (small circles) */
 #circles-sm {
     width: 600px;
     height: auto;
@@ -107,7 +109,7 @@ nav {
     padding: 0;
 }
 
-/*The circles themselves.*/
+/* The circles themselves. */
 circle {
     cursor: pointer;
 }
@@ -115,11 +117,11 @@ circle {
 section {
     margin: 0;
     padding: 0 5%;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
-    align-items: flex-start; /*cross axis*/
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
 }
 
 @media (min-width: 300px) {
@@ -136,18 +138,18 @@ section {
 
 #thumb {
     margin: 0;
-    flex: initial; /*flex: 0 1 auto*/
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start; /*cross axis*/
+    align-items: flex-start; /* cross axis */
 }
 
-/*ID for smaller figure*/
+/* ID for smaller figure */
 @media (min-width: 300px) {
     #thumb {
         width: 90%;
         padding: 1em 5%;
-        justify-content: center; /*main axis*/
+        justify-content: center; /* main axis */
     }
 }
 
@@ -155,28 +157,28 @@ section {
     #thumb {
         width: 20%;
         padding: 1em 5% 1em 0;
-        justify-content: flex-end; /*main axis*/
+        justify-content: flex-end; /* main axis */
     }
 }
 
-/*Fonts*/
+/* Fonts */
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 1.8;
-    margin-top: .25em;
+    margin-top: 0.25em;
 }
 
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
 }
 
 @media all and (min-width: 300px) {
     p {
-        font-size: .875em;
+        font-size: 0.875em;
     }
 
     h2 {
@@ -186,7 +188,7 @@ h2 {
 
 @media all and (min-width: 400px) {
     p {
-        font-size: .9375em;
+        font-size: 0.9375em;
     }
 
     h2 {
