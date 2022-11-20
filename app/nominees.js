@@ -7,10 +7,10 @@ const nomineeInfo = [
         paragraph: [
             "As a Senator from Illinois and 44th President,",
             "Barack Obama worked to shape the Supreme Court.",
-            "He both won and lost along the way. Photo: Pete Souza.",
+            "He both won and lost along the way. Photo: Pete Souza."
         ].join(" "),
         thumbImage: "barack-obama-portrait",
-        thumbAlt: "portrait photo of Barack Obama as Senator",
+        thumbAlt: "portrait photo of Barack Obama as Senator"
     },
     {
         panoImage: "john-roberts-sworn-in",
@@ -20,10 +20,10 @@ const nomineeInfo = [
         paragraph: [
             "In 2005, Senator Obama opposes George W. Bush's",
             "Supreme Court nominee John Roberts. Roberts is confirmed anyway",
-            "and later becomes Chief Justice. Photo: Paul Morse.",
+            "and later becomes Chief Justice. Photo: Paul Morse."
         ].join(" "),
         thumbImage: "john-roberts-portrait",
-        thumbAlt: "portrait photo of John Roberts",
+        thumbAlt: "portrait photo of John Roberts"
     },
     {
         panoImage: "bush-nominates-samuel-alito",
@@ -33,10 +33,10 @@ const nomineeInfo = [
         paragraph: [
             "In 2006, Senator Obama opposes Bush's next Supreme Court nominee,",
             "Samuel Alito. Like Roberts, Alito is also confirmed.",
-            "Photo: Paul Morse.",
+            "Photo: Paul Morse."
         ].join(" "),
         thumbImage: "samuel-alito-portrait",
-        thumbAlt: "portrait photo of Samuel Alito",
+        thumbAlt: "portrait photo of Samuel Alito"
     },
     {
         panoImage: "obama-biden-meet-sotamayor",
@@ -48,10 +48,10 @@ const nomineeInfo = [
             "of the US Court of Appeals for the Second Circuit.",
             "She is confirmed and replaces retiring Justice David H. Souter.",
             "Sotomayor was among four finalists; all women.",
-            "Photo: Pete Souza.",
+            "Photo: Pete Souza."
         ].join(" "),
         thumbImage: "sonia-sotamayor-portrait",
-        thumbAlt: "portrait photo of Sonia Sotomayor",
+        thumbAlt: "portrait photo of Sonia Sotomayor"
     },
     {
         panoImage: "obama-meets-kagan",
@@ -63,10 +63,10 @@ const nomineeInfo = [
             "the Solicitor General of the United States.",
             "She is confirmed and replaces retiring Justice John Paul Stevens.",
             "Kagan was a candidate to replace Justice Souter in 2009.",
-            "Photo: Pete Souza.",
+            "Photo: Pete Souza."
         ].join(" "),
         thumbImage: "elena-kagan-portrait",
-        thumbAlt: "portrait photo of Elena Kagan",
+        thumbAlt: "portrait photo of Elena Kagan"
     },
     {
         panoImage: "antonin-scalia-smiles",
@@ -76,10 +76,10 @@ const nomineeInfo = [
         paragraph: [
             "In February of 2016, Justice Antonin Scalia is found dead",
             "while vacationing at Cibolo Creek Ranch near Marfa, Texas.",
-            "Photo: Stephen Masker.",
+            "Photo: Stephen Masker."
         ].join(" "),
         thumbImage: "antonin-scalia-portrait",
-        thumbAlt: "portrait photo of Antonin Scalia",
+        thumbAlt: "portrait photo of Antonin Scalia"
     },
     {
         panoImage: "obama-biden-nominate-garland",
@@ -90,10 +90,10 @@ const nomineeInfo = [
             "In March, Obama nominates Merrick Garland,",
             "Chief Judge of the US Court of Appeals",
             "for the District of Columbia Circuit.",
-            "Photo: Pete Souza.",
+            "Photo: Pete Souza."
         ].join(" "),
         thumbImage: "merrick-garland-portrait",
-        thumbAlt: "portrait photo of Merrick Garland",
+        thumbAlt: "portrait photo of Merrick Garland"
     },
     {
         panoImage: "us-capitol-building",
@@ -106,10 +106,10 @@ const nomineeInfo = [
             "citing Obama's final year in office.",
             "Judge Garland's nomination remains open for 293 days.",
             "expiring on January 3, 2017, as the 114th Congress closes.",
-            "Photo: Greg Willis.",
+            "Photo: Greg Willis."
         ].join(" "),
         thumbImage: "mitch-mcconnell-portrait",
-        thumbAlt: "portrait photo of Mitch McConnell",
+        thumbAlt: "portrait photo of Mitch McConnell"
     },
     {
         panoImage: "trump-nominates-gorsuch",
@@ -121,10 +121,10 @@ const nomineeInfo = [
             "of the U.S. Court of Appeals for the Tenth Circuit.",
             "Gorsuch is confirmed by a vote of 54–45",
             "and assumes Justice Scalia's position in April 2017.",
-            "Photo: White House staff.",
+            "Photo: White House staff."
         ].join(" "),
         thumbImage: "neil-gorsuch-portrait",
-        thumbAlt: "portrait photo of Neil Gorsuch",
+        thumbAlt: "portrait photo of Neil Gorsuch"
     },
     {
         panoImage: "obama-congratulates-kagan",
@@ -138,11 +138,11 @@ const nomineeInfo = [
             "(B) Portrait of Senator McConnell: his staff.",
             "(C) Portrait of Barack Obama: Pete Souza.",
             "(D) Above: Obama congratulates a confirmed Elena Kagan.",
-            "Photo: Pete Souza.",
+            "Photo: Pete Souza."
         ].join(" "),
         thumbImage: "transparent-image",
-        thumbAlt: "portrait photo of Barack Obama as President",
-    },
+        thumbAlt: "portrait photo of Barack Obama as President"
+    }
 ];
 
 export {nomineeInfo};
