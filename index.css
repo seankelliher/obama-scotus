@@ -34,7 +34,6 @@ img {
     margin: 0;
     padding: 1em 1em 0; /* longhand is 1em 1em 0 1em */
     flex: initial; /* flex: 0 1 auto */
-    cursor: pointer;
     position: relative;
 }
 
@@ -48,18 +47,23 @@ img {
     background: rgba(242 242 242 / 80%);
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 95%;
+    left: 95%;
+    transform: translate(-95%, -95%);
     display: flex;
     flex-flow: row wrap;
     justify-content: center; /* main axis */
     align-items: center; /* cross axis */
+    cursor: pointer;
 }
 
-/* Makes icon invisible */
+/* Makes icon invisible/visible */
 .invisible {
     opacity: 0;
+}
+
+.visible {
+    opacity: 1;
 }
 
 /* Fades icon in */
