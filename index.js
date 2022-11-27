@@ -10,10 +10,34 @@ document.addEventListener("DOMContentLoaded", function () {
     createScene(0);
     showPrompt(0);
 
-    // Get the "next" button (works for "replay" button too), listen for clicks.
+    // Get the "next" and "replay" icons.
     const next = document.getElementById("next");
-    next.addEventListener("click", function () {
+    const replay = document.getElementById("replay");
 
+    // Listen for click events.
+    next.addEventListener("click", function () {
+        processEvent();
+    });
+
+    replay.addEventListener("click", function () {
+        processEvent();
+    });
+
+    // Listen for keyup events.
+    next.addEventListener("keyup", function (event) {
+        if (event.code === "Enter") {
+            processEvent();    
+        }
+    });
+
+    replay.addEventListener("keyup", function (event) {
+        if (event.code === "Enter") {
+            processEvent();    
+        }
+    });
+
+    // Process event.
+    function processEvent() {
         // Get image, current scene.
         const panoImg = document.querySelector("#pano img");
         const currentScene = panoImg.dataset.sceneNumber;
@@ -29,10 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
         createScene(newScene);
         fillCircle(currentScene, newScene);
         showPrompt(newScene);
-    });
+    }
 
-    // Get the svg element #circles-sm, listen for clicks.
+    // Get the svg element #circles-sm.
     const circles = document.getElementById("circles-sm");
+
+    // Listen for click events.
+    // NOTE: Users cannot tab thru "circles" or activate them with keyup events.
+    // For visually impaired, having close competing commands seemed confusing.
     circles.addEventListener("click", function (event) {
 
         if (event.target.nodeName === "circle") {
