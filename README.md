@@ -1,7 +1,7 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
 # Obama and SCOTUS Nominees
 
-Interactive gallery of Barack Obama's history with Supreme Court nominees.
+Interactive gallery of Barack Obama's history with Supreme Court nominees. [View working component](https://seankelliher.github.io/obama-scotus/).
 
 ## Project Screen Shots
 
