@@ -15,7 +15,7 @@ function createScene(newScene) {
     panoImg.dataset.sceneNumber = `${nomineeInfo[newScene].scene}`;
     hline.textContent = `${nomineeInfo[newScene].headline}`;
     ptext.textContent = `${nomineeInfo[newScene].paragraph}`;
-    thumbImg.src = `images/${nomineeInfo[newScene].thumbImage}.png`;
+    thumbImg.src = `images/${nomineeInfo[newScene].thumbImage}.jpg`;
     thumbImg.alt = `${nomineeInfo[newScene].thumbAlt}`;
 }
 
