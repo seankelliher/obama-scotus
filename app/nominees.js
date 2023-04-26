@@ -7,7 +7,7 @@ const nomineeInfo = [
         paragraph: [
             "As a Senator from Illinois and 44th President,",
             "Barack Obama worked to shape the Supreme Court.",
-            "He both won and lost along the way. Photo: Pete Souza."
+            "He both won and lost along the way. Photos: Pete Souza."
         ].join(" "),
         thumbImage: "barack-obama-portrait",
         thumbAlt: "portrait photo of Barack Obama as Senator"
@@ -20,7 +20,8 @@ const nomineeInfo = [
         paragraph: [
             "In 2005, Senator Obama opposes George W. Bush's",
             "Supreme Court nominee John Roberts. Roberts is confirmed anyway",
-            "and later becomes Chief Justice. Photo: Paul Morse."
+            "and later becomes Chief Justice. Photos: Paul Morse (above), ",
+            "Steve Petteway (portrait)."
         ].join(" "),
         thumbImage: "john-roberts-portrait",
         thumbAlt: "portrait photo of John Roberts"
@@ -33,7 +34,7 @@ const nomineeInfo = [
         paragraph: [
             "In 2006, Senator Obama opposes Bush's next Supreme Court nominee,",
             "Samuel Alito. Like Roberts, Alito is also confirmed.",
-            "Photo: Paul Morse."
+            "Photos: Paul Morse (above), Steve Petteway (portrait)."
         ].join(" "),
         thumbImage: "samuel-alito-portrait",
         thumbAlt: "portrait photo of Samuel Alito"
@@ -48,7 +49,7 @@ const nomineeInfo = [
             "of the US Court of Appeals for the Second Circuit.",
             "She is confirmed and replaces retiring Justice David H. Souter.",
             "Sotomayor was among four finalists; all women.",
-            "Photo: Pete Souza."
+            "Photo: Pete Souza (above), Steve Petteway (portrait)."
         ].join(" "),
         thumbImage: "sonia-sotamayor-portrait",
         thumbAlt: "portrait photo of Sonia Sotomayor"
@@ -63,7 +64,7 @@ const nomineeInfo = [
             "the Solicitor General of the United States.",
             "She is confirmed and replaces retiring Justice John Paul Stevens.",
             "Kagan was a candidate to replace Justice Souter in 2009.",
-            "Photo: Pete Souza."
+            "Photos: Pete Souza (above), Steve Petteway (portrait)."
         ].join(" "),
         thumbImage: "elena-kagan-portrait",
         thumbAlt: "portrait photo of Elena Kagan"
@@ -76,7 +77,7 @@ const nomineeInfo = [
         paragraph: [
             "In February of 2016, Justice Antonin Scalia is found dead",
             "while vacationing at Cibolo Creek Ranch near Marfa, Texas.",
-            "Photo: Stephen Masker."
+            "Photo: Stephen Masker (above), Steve Petteway (portrait)."
         ].join(" "),
         thumbImage: "antonin-scalia-portrait",
         thumbAlt: "portrait photo of Antonin Scalia"
@@ -90,7 +91,7 @@ const nomineeInfo = [
             "In March, Obama nominates Merrick Garland,",
             "Chief Judge of the US Court of Appeals",
             "for the District of Columbia Circuit.",
-            "Photo: Pete Souza."
+            "Photos: Pete Souza (above), Court of Appeals, DC Circuit (portrait)."
         ].join(" "),
         thumbImage: "merrick-garland-portrait",
         thumbAlt: "portrait photo of Merrick Garland"
@@ -104,9 +105,9 @@ const nomineeInfo = [
             "But Senate Majority Leader Mitch McConnell refuses to hold",
             "a confirmation hearing,",
             "citing Obama's final year in office.",
-            "Judge Garland's nomination remains open for 293 days.",
+            "Judge Garland's nomination remains open for 293 days,",
             "expiring on January 3, 2017, as the 114th Congress closes.",
-            "Photo: Greg Willis."
+            "Photos: Greg Willis (above), McConnell's staff (portrait)."
         ].join(" "),
         thumbImage: "mitch-mcconnell-portrait",
         thumbAlt: "portrait photo of Mitch McConnell"
@@ -121,7 +122,7 @@ const nomineeInfo = [
             "of the U.S. Court of Appeals for the Tenth Circuit.",
             "Gorsuch is confirmed by a vote of 54–45",
             "and assumes Justice Scalia's position in April 2017.",
-            "Photo: White House staff."
+            "Photos: White House staff (above), Franz Jantzen (portrait)."
         ].join(" "),
         thumbImage: "neil-gorsuch-portrait",
         thumbAlt: "portrait photo of Neil Gorsuch"
@@ -130,18 +131,15 @@ const nomineeInfo = [
         panoImage: "obama-congratulates-kagan",
         panoAlt: "Obama embraces Kagan in Oval Office and she is confirmed",
         scene: 9,
-        headline: "Additional Photographs",
+        headline: "Legacy",
         paragraph: [
-            "(A) Judicial portraits: Steve Petteway;",
-            "except Justice Gorsuch: Franz Jantzen, and",
-            "Judge Garland: US Court of Appeals for the DC Circuit.",
-            "(B) Portrait of Senator McConnell: his staff.",
-            "(C) Portrait of Barack Obama: Pete Souza.",
-            "(D) Above: Obama congratulates a confirmed Elena Kagan.",
-            "Photo: Pete Souza."
+            "In his two terms, Obama places two justices, Sonia Sotomayor",
+            "and Elena Kagan, to lifetime appointments on the Supreme Court.",
+            "(Above) Obama congratulates Elena Kagan. (Right) Obama leaves",
+            "the White House, January 20, 2017. Photos: Pete Souza."
         ].join(" "),
-        thumbImage: "transparent-image",
-        thumbAlt: "portrait photo of Barack Obama as President"
+        thumbImage: "obama-departs-white-house",
+        thumbAlt: "Barack Obama looks down on White House from Marine One"
     }
 ];
 
