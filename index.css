@@ -7,32 +7,19 @@ img {
 .container {
     width: 100%;
     max-width: 900px;
-    margin: 1.5em auto 0; /* longhand is 1.5em auto 0 auto */
+    margin: 0 auto;
     padding: 0;
-    background: #f2f2f2; /* light grey */
-    border: 2px solid #eee; /* grey 200 */
     display: flex;
+    flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
     align-items: flex-start; /* cross axis */
 }
 
-@media (min-width: 300px) {
-    .container {
-        flex-flow: column nowrap;
-    }
-}
-
-@media (min-width: 600px) {
-    .container {
-        flex-flow: row wrap;
-    }
-}
-
 /* ID for large figure */
 #pano {
-    /* width: 95%; */
+    width: 90%;
     margin: 0;
-    padding: 1em 1em 0; /* longhand is 1em 1em 0 1em */
+    padding: 0 5%;
     flex: initial; /* flex: 0 1 auto */
     position: relative;
 }
@@ -47,14 +34,30 @@ img {
     background: rgba(242 242 242 / 80%);
     border-radius: 50%;
     position: absolute;
-    top: 95%;
-    left: 95%;
-    transform: translate(-95%, -95%);
+    top: 90%;
+    left: 90%;
+    transform: translate(-90%, -90%);
     display: flex;
     flex-flow: row wrap;
     justify-content: center; /* main axis */
     align-items: center; /* cross axis */
     cursor: pointer;
+}
+
+@media (width >= 300px) {
+    #next,
+    #replay {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (width >= 600px) {
+    #next,
+    #replay {
+        width: 48px;
+        height: 48px;
+    }
 }
 
 /* Makes icon invisible/visible */
@@ -83,7 +86,9 @@ img {
 }
 
 nav {
+    width: 100%;
     margin: 0;
+    padding: 0;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
@@ -91,26 +96,12 @@ nav {
     align-items: center; /* cross axis */
 }
 
-@media (min-width: 300px) {
-    nav {
-        width: 90%;
-        padding: 1em 5%;
-    }
-}
-
-@media (min-width: 600px) {
-    nav {
-        width: 70%;
-        padding: 0.5em 15% 0; /* longhand is .5em 15% 0 15% */
-    }
-}
-
 /* ID for SVG (small circles) */
 #circles-sm {
-    width: 600px;
-    height: auto;
+    width: 80%;
     margin: 0;
-    padding: 0;
+    padding: 0 10%;
+    flex: initial; /* flex: 0 1 auto */
 }
 
 /* The circles themselves. */
@@ -118,52 +109,69 @@ circle {
     cursor: pointer;
 }
 
-section {
+main {
+    width: 90%;
     margin: 0;
     padding: 0 5%;
-    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /* main axis */
     align-items: flex-start; /* cross axis */
 }
 
-@media (min-width: 300px) {
-    section {
-        width: 90%;
-    }
-}
-
-@media (min-width: 600px) {
-    section {
-        width: 65%;
-    }
+section {
+    margin: 0;
+    flex: initial; /* flex: 0 1 auto */
 }
 
 #thumb {
+    max-width: 200px;
     margin: 0;
+    padding: 0.75em 0;
     flex: initial; /* flex: 0 1 auto */
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start; /* cross axis */
 }
 
-/* ID for smaller figure */
-@media (min-width: 300px) {
-    #thumb {
-        width: 90%;
-        padding: 1em 5%;
+@media (width >= 300px) {
+    main {
         justify-content: center; /* main axis */
     }
-}
 
-@media (min-width: 600px) {
+    section {
+        width: 100%;
+        padding: 0;
+    }
+
     #thumb {
-        width: 20%;
-        padding: 1em 5% 1em 0;
-        justify-content: flex-end; /* main axis */
+        width: 62.5%; /* assuming smallest screen is 320px */
     }
 }
+
+@media (width >= 400px) {
+    #thumb {
+        width: 50%;
+    }
+}
+
+@media (width >= 500px) {
+    #thumb {
+        width: 40%;
+    }
+}
+
+@media (width >= 600px) {
+    main {
+        justify-content: space-between; /* main axis */
+    }
+
+    section {
+        width: 75%;
+        padding: 0 5% 0 0;
+    }
+
+    #thumb {
+        width: 20%;
+    }
+}
+
 
 /* Fonts */
 p {
@@ -171,47 +179,53 @@ p {
     font-weight: 400;
     line-height: 1.8;
     margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 0.25em;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-@media all and (min-width: 300px) {
+@media (width >= 300px) {
     p {
-        font-size: 0.875em;
+        font-size: 0.8125em; /* 13px */
     }
 
     h2 {
-        font-size: 1em;
+        font-size: 0.9375em; /* 15px */
     }
 }
 
-@media all and (min-width: 400px) {
+@media (width >= 400px) {
     p {
-        font-size: 0.9375em;
+        font-size: 0.875em; /* 14px */
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1em; /* 16px */
     }
 }
 
-@media all and (min-width: 600px) {
+@media (width >= 500px) {
     p {
-        font-size: 1em;
+        font-size: 0.9375em; /* 15px */
     }
 
     h2 {
-        font-size: 1.4em;
+        font-size: 1.0625em; /* 17px */
     }
 }
 
-@media all and (min-width: 900px) {
+@media (width >= 600px) {
+    p {
+        font-size: 1em; /* 16px */
+    }
+
     h2 {
-        font-size: 1.6em;
+        font-size: 1.125em; /* 18px */
     }
 }
