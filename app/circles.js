@@ -12,8 +12,8 @@ function fillCircle(currentScene, newScene) {
     const highlight = document.getElementById(newCircle);
 
     // Fill the circles.
-    reset.setAttribute("fill", "#020659"); // dark purple.
-    highlight.setAttribute("fill", "#f23005"); // orange.
+    reset.setAttribute("fill", "#0d0d0d"); // almost black.
+    highlight.setAttribute("fill", "#f24405"); // orange.
 }
 
 export {fillCircle};
