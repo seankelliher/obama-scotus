@@ -19,7 +19,9 @@ Interactive gallery of Barack Obama's history with Supreme Court nominees. [View
 
 ## Installation and Setup Instructions
 
-(1) This is a static component. All you need is a web browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions. (2) Images in this repo are slightly larger in size than needed. They can be scaled to optimize loading.
+This is a static component. Simply open the `index.html` file in your browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
+
+Images in this repo are slightly larger in size than needed. They can be scaled to optimize loading.
 
 ## Reflection
 
