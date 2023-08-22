@@ -7,8 +7,11 @@ img {
 .container {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0.5em auto;
+    padding: 1em 0;
+    background: #fcfcff;
+    border: 1px solid #72787e;
+    border-radius: 8px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
@@ -17,9 +20,9 @@ img {
 
 /* ID for large figure */
 #pano {
-    width: 90%;
+    width: 95%;
     margin: 0;
-    padding: 0 5%;
+    padding: 0 2.5%;
     flex: initial; /* flex: 0 1 auto */
     position: relative;
 }
@@ -34,9 +37,9 @@ img {
     background: rgba(242 242 242 / 80%);
     border-radius: 50%;
     position: absolute;
-    top: 90%;
-    left: 90%;
-    transform: translate(-90%, -90%);
+    top: 95%;
+    left: 95%;
+    transform: translate(-95%, -95%);
     display: flex;
     flex-flow: row wrap;
     justify-content: center; /* main axis */
@@ -86,9 +89,12 @@ img {
 }
 
 nav {
-    width: 100%;
-    margin: 0;
+    width: 95%;
+    margin: 1em 2.5%;
     padding: 0;
+    /*background: #d0e4ff;*/
+    background: #cde5ff;
+    border-radius: 8px;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
@@ -110,9 +116,9 @@ circle {
 }
 
 main {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
+    width: 95%;
+    margin: 0 2.5%;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start; /* cross axis */
@@ -137,6 +143,7 @@ section {
 
     section {
         width: 100%;
+        height: 13em;
         padding: 0;
     }
 
@@ -146,12 +153,20 @@ section {
 }
 
 @media (width >= 400px) {
+    section {
+        height: 12.2em;
+    }
+
     #thumb {
         width: 50%;
     }
 }
 
 @media (width >= 500px) {
+    section {
+        height: 11.8em;
+    }
+
     #thumb {
         width: 40%;
     }
@@ -164,6 +179,7 @@ section {
 
     section {
         width: 75%;
+        height: 14em;
         padding: 0 5% 0 0;
     }
 
@@ -172,6 +188,17 @@ section {
     }
 }
 
+@media (width >= 700px) {
+    section {
+        height: 12em;
+    }
+}
+
+@media (width >= 800px) {
+    section {
+        height: 10.6em;
+    }
+}
 
 /* Fonts */
 p {
@@ -180,6 +207,7 @@ p {
     line-height: 1.8;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
+    color: #1a1c1e;
 }
 
 h2 {
@@ -188,6 +216,7 @@ h2 {
     line-height: 1.4;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    color: #1a1c1e;
 }
 
 @media (width >= 300px) {
