@@ -1,27 +1,25 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
 # Obama and SCOTUS Nominees
 
-Interactive gallery of Barack Obama's history with Supreme Court nominees. [View working component](https://seankelliher.github.io/obama-scotus/).
+Gallery of Barack Obama and Supreme Court nominees. [View working component](https://seankelliher.github.io/obama-scotus/).
 
 ## Project Screen Shots
 
-* Starting view - Obama and Justices (larger screen).
+* Justice Roberts
 ![screen shot of project](/screenshots/obama-scotus-screenshot1.png?s=600)
 
-* View with Justice Roberts (smaller screen).
+* Justice Alito
 ![screen shot of project](/screenshots/obama-scotus-screenshot2.png?s=600)
 
-* View with Justice Sotomayor (smaller screen).
+* Justice Sotomayor
 ![screen shot of project](/screenshots/obama-scotus-screenshot3.png?s=600)
 
-* Final scene (smaller screen).
+*  Senator McConnell
 ![screen shot of project](/screenshots/obama-scotus-screenshot4.png?s=600)
 
 ## Installation and Setup Instructions
 
 This is a static component. Simply open the `index.html` file in your browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
-
-Images in this repo are slightly larger in size than needed. They can be scaled to optimize loading.
 
 ## Reflection
 
