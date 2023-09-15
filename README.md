@@ -1,7 +1,7 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
 # Obama and SCOTUS Nominees
 
-Gallery of Barack Obama and Supreme Court nominees. [View working component](https://seankelliher.github.io/obama-scotus/).
+Gallery of Barack Obama and Supreme Court nominees, built with Vue.js. [View working component](https://seankelliher.github.io/obama-scotus/).
 
 ## Project Screen Shots
 
@@ -14,16 +14,28 @@ Gallery of Barack Obama and Supreme Court nominees. [View working component](htt
 * Justice Sotomayor
 ![screen shot of project](/screenshots/obama-scotus-screenshot3.png?s=600)
 
-*  Senator McConnell
+*  Senator McConnell (smaller screens)
 ![screen shot of project](/screenshots/obama-scotus-screenshot4.png?s=600)
 
 ## Installation and Setup Instructions
 
-This is a static component. Simply open the `index.html` file in your browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+
+Installation:
+
+`npm install`  
+
+To Run Vue:
+
+`npm run dev`   
+
+To Visit App:
+
+Visit the localhost port displayed in the terminal after running `npm run dev`.
 
 ## Reflection
 
-I wanted to build a component that lets users learn about Barack Obama's history with Supreme Court nominees. Before coding, I needed to gather information, write accurate descriptions, and find photographs that I could legally use. I initially planned on using a lot of CSS animation. This did not work very well. The transformations looked tacky. Fading in only the play and re-play icons worked best. Other challenges were keeping the "scenes" in the gallery a uniform height as some had more text to display than others. 
+I set out to build a component that lets users learn about Barack Obama's history with Supreme Court nominees. Before designing and coding, I needed to gather information, write accurate descriptions, and find photographs that I could legally use. Once building, technical challenges included deciding how much animation to use (less turned out to be more) and keeping images stationary when the amount of accompanying text differed with each scene.
 
 ## Acknowledgments
 
