@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 834px;
+    margin: 0 auto;
+    padding: 0;
+    background: #f1f0f4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
+}
+
+/* Large image */
+.pano {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /* flex: 0 1 auto */
+    position: relative;
+}
+
+/* Forward and Replay icons in pano */
+.pano-icon {
+    margin: 0;
+    padding: 0;
+    background: rgba(242 242 242 / 80%);
+    border-radius: 50%;
+    position: absolute;
+    top: 95%;
+    left: 95%;
+    transform: translate(-95%, -95%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; /* main axis */
+    align-items: center; /* cross axis */
+    cursor: pointer;
+}
+
+@media (width >= 300px) and (width <= 599px) {
+    .pano-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (width >= 600px) {
+    .pano-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* Animation to fade in pano icons */
+.fade {
+    animation: fade 2s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Previous and next icons in nav */
+.nav-icon {
+    cursor: pointer;
+}
+
+/* Main element and its media queries */
+main {
+    width: 95%;
+    margin: 0;
+    padding: 1em 2.5%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@media (width >= 300px) and (width <= 599px) {
+    main {
+        justify-content: center; /* main axis */
+        align-items: flex-start; /* cross axis */
+    }
+}
+
+@media (width >= 600px) {
+    main {
+        justify-content: space-between; /* main axis */
+        align-items: flex-start; /* cross axis */
+    }
+}
+
+/* Section, thumb class, nav elements and their media queries */
+section {
+    margin: 0;
+    padding: 0;
+    flex: initial; /* flex: 0 1 auto */
+}
+
+.thumb {
+    max-width: 200px;
+    padding: 0;
+    flex: initial; /* flex: 0 1 auto */
+}
+
+nav {
+    padding: 0;
+    background: #cde5ff;
+    border-radius: 8px;
+    flex: initial; /* flex: 0 1 auto */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /* main axis */
+    align-items: center; /* cross axis */
+}
+
+@media (width >= 300px) and (width <= 399px) {
+    section {
+        width: 100%;
+        min-height: 13em;
+    }
+
+    .thumb {
+        width: 60%;
+        margin: 1em 5%;
+
+    }
+
+    nav {
+        width: 60%;
+        margin: 0 5%;
+    }
+}
+
+@media (width >= 400px) and (width <= 499px) {
+    section {
+        width: 100%;
+        min-height: 11em;
+    }
+
+    .thumb {
+        width: 50%;
+        margin: 1em 5%;
+    }
+
+    nav {
+        width: 50%;
+        margin: 0 5%;
+    }
+}
+
+@media (width >= 500px) and (width <= 599px) {
+    section {
+        width: 100%;
+        min-height: 12em;
+    }
+
+    .thumb {
+        width: 40%;
+        margin: 1em 10%;
+    }
+
+    nav {
+        width: 40%;
+        margin: 0 10%;
+    }
+}
+
+@media (width >= 600px) and (width <= 699px) {
+    section {
+        width: 65%;
+        min-height: 16em;
+    }
+
+    .thumb {
+        width: 30%;
+        margin: 0;
+    }
+
+    nav {
+        width: 30%;
+        margin: 1em 0%;
+    }
+}
+
+@media (width >= 700px) {
+    section {
+        width: 70%;
+        min-height: 12em;
+    }
+
+    .thumb {
+        width: 25%;
+        margin: 0;
+    }
+
+    nav {
+        width: 30%;
+        margin: 1em 0%;
+    }
+}
+
+/* Fonts */
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    color: #1a1c1e;
+}
+
+h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #1a1c1e;
+}
+
+@media (width >= 300px) {
+    p {
+        font-size: 0.8125em; /* 13px */
+    }
+
+    h2 {
+        font-size: 0.9375em; /* 15px */
+    }
+}
+
+@media (width >= 400px) {
+    p {
+        font-size: 0.875em; /* 14px */
+    }
+
+    h2 {
+        font-size: 1em; /* 16px */
+    }
+}
+
+@media (width >= 500px) {
+    p {
+        font-size: 0.9375em; /* 15px */
+    }
+
+    h2 {
+        font-size: 1.0625em; /* 17px */
+    }
+}
+
+@media (width >= 600px) {
+    p {
+        font-size: 1em; /* 16px */
+    }
+
+    h2 {
+        font-size: 1.125em; /* 18px */
+    }
+}
