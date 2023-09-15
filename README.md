@@ -1,7 +1,7 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
 # Obama and SCOTUS Nominees
 
-Gallery of Barack Obama and Supreme Court nominees, built with Vue.js. [View working component](https://seankelliher.github.io/obama-scotus/).
+Gallery of Barack Obama and Supreme Court nominees, built with Vue.js. [View working component](https://sean-kelliher-obama-scotus.netlify.app).
 
 ## Project Screen Shots
 
