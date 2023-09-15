@@ -20,21 +20,24 @@ onMounted(() => {
             >
 
             <div
-                class="pano-icon"
-                tabindex="0"
                 v-if="count === scenes.length - 1"
-                @click="count = 0"
+                class="pano-icon"
                 :class="{ fade: isFade }"
+                tabindex="0"
+                @click="count = 0"
+                @keyup.enter="count = 0"
+
             >
                 <img src="/images/replay-icon-24.svg" alt="replay icon">
             </div>
 
             <div
-                class="pano-icon"
-                tabindex="0"
                 v-if="count !== scenes.length - 1"
-                @click="count++"
+                class="pano-icon"
                 :class="{ fade: isFade }"
+                tabindex="0"
+                @click="count++"
+                @keyup.enter="count++"
             >
                 <img src="/images/forward-arrow-icon-24.svg" alt="next icon">
             </div>
@@ -56,14 +59,18 @@ onMounted(() => {
             <nav>
                 <img
                     class="nav-icon"
+                    tabindex="0"
                     @click="[count === 0 ? count = '' : count--]"
+                    @keyup.enter="[count === 0 ? count = '' : count--]"
                     src="/images/chevron-left-icon-24.svg"
                     alt="previous icon"
                 >
                 <p>Scene {{ count + 1 }} of {{ scenes.length }}</p>
                 <img
                     class="nav-icon"
+                    tabindex="0"
                     @click="[count === scenes.length - 1 ? '' : count++]"
+                    @keyup.enter="[count === scenes.length - 1 ? '' : count++]"
                     src="/images/chevron-right-icon-24.svg"
                     alt="next icon"
                 >
