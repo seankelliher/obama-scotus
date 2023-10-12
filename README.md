@@ -3,6 +3,10 @@
 
 Gallery of Barack Obama and Supreme Court nominees, built with Vue.js. [View working component](https://sean-kelliher-obama-scotus.netlify.app).
 
+## Project Status
+
+Next steps, I want to do more extensive accessibility and browser testing.
+
 ## Project Screen Shots
 
 * Justice Roberts
