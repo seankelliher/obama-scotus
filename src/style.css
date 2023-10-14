@@ -46,14 +46,14 @@ img {
     cursor: pointer;
 }
 
-@media (width >= 300px) and (width <= 599px) {
+@media (min-width: 300px) and (max-width: 599px) {
     .pano-icon {
         width: 32px;
         height: 32px;
     }
 }
 
-@media (width >= 600px) {
+@media (min-width: 600px) {
     .pano-icon {
         width: 48px;
         height: 48px;
@@ -89,14 +89,14 @@ main {
     flex-flow: row wrap;
 }
 
-@media (width >= 300px) and (width <= 599px) {
+@media (min-width: 300px) and (max-width: 599px) {
     main {
         justify-content: center; /* main axis */
         align-items: flex-start; /* cross axis */
     }
 }
 
-@media (width >= 600px) {
+@media (min-width: 600px) {
     main {
         justify-content: space-between; /* main axis */
         align-items: flex-start; /* cross axis */
@@ -127,7 +127,7 @@ nav {
     align-items: center; /* cross axis */
 }
 
-@media (width >= 300px) and (width <= 399px) {
+@media (min-width: 300px) and (max-width: 399px) {
     section {
         width: 100%;
         min-height: 13em;
@@ -145,7 +145,7 @@ nav {
     }
 }
 
-@media (width >= 400px) and (width <= 499px) {
+@media (min-width: 400px) and (max-width: 499px) {
     section {
         width: 100%;
         min-height: 11em;
@@ -162,7 +162,7 @@ nav {
     }
 }
 
-@media (width >= 500px) and (width <= 599px) {
+@media (min-width: 500px) and (max-width: 599px) {
     section {
         width: 100%;
         min-height: 12em;
@@ -179,7 +179,7 @@ nav {
     }
 }
 
-@media (width >= 600px) and (width <= 699px) {
+@media (min-width: 600px) and (max-width: 699px) {
     section {
         width: 65%;
         min-height: 16em;
@@ -196,7 +196,7 @@ nav {
     }
 }
 
-@media (width >= 700px) {
+@media (min-width: 700px) {
     section {
         width: 70%;
         min-height: 12em;
@@ -232,7 +232,7 @@ h2 {
     color: #1a1c1e;
 }
 
-@media (width >= 300px) {
+@media (min-width: 300px) and (max-width: 399px) {
     p {
         font-size: 0.8125em; /* 13px */
     }
@@ -242,7 +242,7 @@ h2 {
     }
 }
 
-@media (width >= 400px) {
+@media (min-width: 400px) and (max-width: 499px) {
     p {
         font-size: 0.875em; /* 14px */
     }
@@ -252,7 +252,7 @@ h2 {
     }
 }
 
-@media (width >= 500px) {
+@media (min-width: 500px) and (max-width: 599px) {
     p {
         font-size: 0.9375em; /* 15px */
     }
@@ -262,7 +262,7 @@ h2 {
     }
 }
 
-@media (width >= 600px) {
+@media (min-width: 600px) {
     p {
         font-size: 1em; /* 16px */
     }
