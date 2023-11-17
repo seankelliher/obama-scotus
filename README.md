@@ -18,9 +18,6 @@ Next steps, I want to do more extensive accessibility and browser testing.
 * Justice Sotomayor
 ![screen shot of project](/screenshots/obama-scotus-screenshot3.png?s=600)
 
-*  Senator McConnell (smaller screens)
-![screen shot of project](/screenshots/obama-scotus-screenshot4.png?s=600)
-
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.
