@@ -7,5 +7,4 @@ import GalleryScenes from "./components/GalleryScenes.vue";
 </template>
 
 <style scoped>
-
 </style>
