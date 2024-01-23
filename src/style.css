@@ -9,7 +9,8 @@ img {
     width: 100%;
     max-width: 834px;
     margin: 0 auto;
-    padding: 0;
+    padding: 1em 0;
+    background: #dee3eb;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
@@ -18,7 +19,7 @@ img {
 
 figure.pano {
     width: 90%;
-    margin: 1em 5%;
+    margin: 0 5%;
     padding: 0;
     flex: initial; /* flex: 0 1 auto */
     position: relative;
@@ -168,6 +169,7 @@ nav {
     width: 100%;
     margin: 0;
     padding: 0;
+    background: #dee3eb;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
@@ -187,16 +189,16 @@ p {
     line-height: 1.8;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
-    color: #1a1c1e;
+    color: #42474e;
 }
 
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.4;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    color: #1a1c1e;
+    color: #42474e;
 }
 
 @media (min-width: 300px) and (max-width: 399px) {
