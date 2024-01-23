@@ -43,38 +43,38 @@ onMounted(() => {
         </figure>
 
         <main>
+            <nav>
+                <img
+                    class="nav-icon"
+                    tabindex="0"
+                    @click="[count !== 0 ? count-- : '']"
+                    @keyup.enter="[count !== 0 ? count-- : '']"
+                    src="/images/chevron-left-icon-24.svg"
+                    alt="previous icon"
+                >
+                <p>{{ count + 1 }} of {{ scenes.length }}</p>
+                <img
+                    class="nav-icon"
+                    tabindex="0"
+                    @click="[count !== scenes.length - 1 ? count++ : '']"
+                    @keyup.enter="[count !== scenes.length - 1 ? count++ : '']"
+                    src="/images/chevron-right-icon-24.svg"
+                    alt="next icon"
+                >
+            </nav>
+
             <section>
                 <h2 id="hline">{{ scenes[count].headline }}</h2>
                 <p id="ptext">{{ scenes[count].paragraph }}</p>
             </section>
 
-            <aside>    
+            <aside>   
                 <figure class="thumb">
                     <img
                         :src="`images/${scenes[count].thumbImage}.jpg`"
                         :alt="`${scenes[count].thumbAlt}`"
                     >
                 </figure>
-                
-                <nav>
-                    <img
-                        class="nav-icon"
-                        tabindex="0"
-                        @click="[count !== 0 ? count-- : '']"
-                        @keyup.enter="[count !== 0 ? count-- : '']"
-                        src="/images/chevron-left-icon-24.svg"
-                        alt="previous icon"
-                    >
-                    <p>{{ count + 1 }} of {{ scenes.length }}</p>
-                    <img
-                        class="nav-icon"
-                        tabindex="0"
-                        @click="[count !== scenes.length - 1 ? count++ : '']"
-                        @keyup.enter="[count !== scenes.length - 1 ? count++ : '']"
-                        src="/images/chevron-right-icon-24.svg"
-                        alt="next icon"
-                    >
-                </nav>
             </aside>
         </main>
     </div>
