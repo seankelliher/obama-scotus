@@ -1,4 +1,9 @@
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
+body {
+    margin-top: 0;
+    background: #dee3eb;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -8,52 +13,87 @@ img {
 .container {
     width: 100%;
     max-width: 834px;
-    margin: 0 auto;
+    margin: 2em auto;
     padding: 1em 0;
-    background: #dee3eb;
+    border: 1px solid #c2c7ce; /* neutral variant 35 */
+    border-radius: 12px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; /* main axis */
     align-items: flex-start; /* cross axis */
 }
 
-figure.pano {
+nav {
+    width: 90%;
+    margin-bottom: 1em;
+    padding: 0.25em 5%;
+    flex: initial; /* flex: 0 1 auto */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; /* main axis */
+    align-items: center; /* cross axis */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d5359; /* neutral variant 35 */
+}
+
+/* Previous and next icons */
+button.nav-icon {
+    width: 24px;
+    margin: 0 5px;
+    padding: 0;
+    background: rgba(242 242 242 / 90%);
+    border: 1px solid #c2c7ce;
+    cursor: pointer;
+}
+
+.pano-container {
     width: 90%;
     margin: 0 5%;
     padding: 0;
     flex: initial; /* flex: 0 1 auto */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /* main axis */
+    align-items: flex-start; /* cross axis */
     position: relative;
 }
 
-/* Forward and Replay icons */
-figure.pano-icon {
+figure.pano {
+    width: 100%;
     margin: 0;
     padding: 0;
-    background: rgba(242 242 242 / 80%);
+    flex: initial; /* flex: 0 1 auto */
+}
+
+figcaption {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d5359; /* neutral variant 35 */
+    margin-top: 0.25em;
+}
+
+/* Forward and Replay icons */
+button.pano-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    background: rgba(242 242 242 / 90%);
+    border: none;
     border-radius: 50%;
     position: absolute;
-    top: 95%;
-    left: 95%;
-    transform: translate(-95%, -95%);
+    top: 15px;
+    right: 5px;
+    transform: translate(-15px, -5px);
+    cursor: pointer;
+    flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
     justify-content: center; /* main axis */
     align-items: center; /* cross axis */
-    cursor: pointer;
-}
-
-@media (min-width: 300px) and (max-width: 599px) {
-    figure.pano-icon {
-        width: 32px;
-        height: 32px;
-    }
-}
-
-@media (min-width: 600px) {
-    figure.pano-icon {
-        width: 48px;
-        height: 48px;
-    }
 }
 
 /* Animation to fade in pano icons */
@@ -74,7 +114,7 @@ figure.pano-icon {
 main {
     width: 90%;
     margin: 0;
-    padding: 0 5%;
+    padding: 1em 5%;
     flex: initial; /* flex: 0 1 auto */
     display: flex;
     flex-flow: row wrap;
@@ -104,7 +144,7 @@ aside {
 
     section {
         width: 100%;
-        min-height: 14em;
+        min-height: 12em;
     }
 
     aside {
@@ -119,7 +159,7 @@ aside {
 
     section {
         width: 100%;
-        min-height: 14em;
+        min-height: 12em;
     }
 
     aside {
@@ -165,23 +205,6 @@ aside {
     flex: initial; /* flex: 0 1 auto */
 }
 
-nav {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #dee3eb;
-    flex: initial; /* flex: 0 1 auto */
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; /* main axis */
-    align-items: center; /* cross axis */
-}
-
-/* Previous and next icons */
-.nav-icon {
-    cursor: pointer;
-}
-
 /* Fonts */
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -189,21 +212,26 @@ p {
     line-height: 1.8;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
-    color: #42474e;
+    color: #42474e; /* neutral variant 30 */
 }
 
 h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 600;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    font-style: italic;
     line-height: 1.4;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    color: #42474e;
+    color: #42474e; /* neutral variant 30 */
 }
 
 @media (min-width: 300px) and (max-width: 399px) {
     p {
         font-size: 0.8125em; /* 13px */
+    }
+
+    figcaption, nav {
+        font-size: 0.75em; /* 12px */
     }
 
     h2 {
@@ -216,6 +244,10 @@ h2 {
         font-size: 0.875em; /* 14px */
     }
 
+    figcaption, nav {
+        font-size: 0.8125em; /* 13px */
+    }
+
     h2 {
         font-size: 1em; /* 16px */
     }
@@ -226,6 +258,10 @@ h2 {
         font-size: 0.9375em; /* 15px */
     }
 
+    figcaption, nav {
+        font-size: 0.875em; /* 14px */
+    }
+
     h2 {
         font-size: 1.0625em; /* 17px */
     }
@@ -234,6 +270,10 @@ h2 {
 @media (min-width: 600px) {
     p {
         font-size: 1em; /* 16px */
+    }
+
+    figcaption, nav {
+        font-size: 0.9375em; /* 15px */
     }
 
     h2 {
