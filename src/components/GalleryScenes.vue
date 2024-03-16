@@ -8,61 +8,72 @@ const isFade = ref(true);
 onMounted(() => {
     scenes[count];
 });
+
+function checkCount(action) {
+    if (action === "decrement") {
+        if (count.value !== 0) {
+            count.value = count.value - 1;
+        } else if (count.value === 0) {
+            count.value = 9;
+        }
+    } else if (action === "increment") {
+        if (count.value !== 9) {
+            count.value = count.value + 1;
+        } else if (count.value === 9) {
+            count.value = 0;
+        } 
+    }
+}
 </script>
 
 <template>
     <div class="container">
-        <figure class="pano">
-            <img
-                :src="`images/${scenes[count].panoImage}.jpg`"
-                :alt="`${scenes[count].panoAlt}`"
+        <nav>
+            {{ count + 1 }} of {{ scenes.length }}
+            <button
+                class="nav-icon"
+                @click="checkCount('decrement')"
             >
+                <img src="/images/chevron-left-icon-24.svg" alt="previous icon">
+                
+            </button>
+             <button
+                class="nav-icon"
+                @click="checkCount('increment')"
+            >
+                <img src="/images/chevron-right-icon-24.svg" alt="next icon">
+                
+            </button>
+        </nav>
+        <div class="pano-container">
+            <figure class="pano">
+                <img
+                    :src="`images/${scenes[count].panoImage}.jpg`"
+                    :alt="`${scenes[count].panoAlt}`"
+                >
+                <figcaption>{{ scenes[count].panoCaption }}</figcaption>
+            </figure>
 
-            <figure
-                v-if="count === scenes.length - 1"
+            <button
+                v-if="count === 9"
                 class="pano-icon"
                 :class="{ fade: isFade }"
-                tabindex="0"
-                @click="count = 0"
-                @keyup.enter="count = 0"
-
+                @click="checkCount('increment')"
             >
                 <img src="/images/replay-icon-24.svg" alt="replay icon">
-            </figure>
+            </button>
 
-            <figure
-                v-if="count !== scenes.length - 1"
+            <button
+                v-if="count !== 9"
                 class="pano-icon"
                 :class="{ fade: isFade }"
-                tabindex="0"
-                @click="count++"
-                @keyup.enter="count++"
+                @click="checkCount('increment')"
             >
                 <img src="/images/forward-arrow-icon-24.svg" alt="next icon">
-            </figure>
-        </figure>
+            </button>
+        </div>
 
         <main>
-            <nav>
-                <img
-                    class="nav-icon"
-                    tabindex="0"
-                    @click="[count !== 0 ? count-- : '']"
-                    @keyup.enter="[count !== 0 ? count-- : '']"
-                    src="/images/chevron-left-icon-24.svg"
-                    alt="previous icon"
-                >
-                <p>{{ count + 1 }} of {{ scenes.length }}</p>
-                <img
-                    class="nav-icon"
-                    tabindex="0"
-                    @click="[count !== scenes.length - 1 ? count++ : '']"
-                    @keyup.enter="[count !== scenes.length - 1 ? count++ : '']"
-                    src="/images/chevron-right-icon-24.svg"
-                    alt="next icon"
-                >
-            </nav>
-
             <section>
                 <h2 id="hline">{{ scenes[count].headline }}</h2>
                 <p id="ptext">{{ scenes[count].paragraph }}</p>
@@ -74,6 +85,7 @@ onMounted(() => {
                         :src="`images/${scenes[count].thumbImage}.jpg`"
                         :alt="`${scenes[count].thumbAlt}`"
                     >
+                    <figcaption>{{ scenes[count].thumbCaption }}</figcaption>
                 </figure>
             </aside>
         </main>
