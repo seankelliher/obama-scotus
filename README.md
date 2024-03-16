@@ -1,7 +1,7 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
-# Obama and SCOTUS Nominees
+# Obama and Supreme Court Nominees
 
-Gallery of Barack Obama and Supreme Court nominees, built with Vue.js. [View working component](https://sean-kelliher-obama-scotus.netlify.app).
+Gallery of Senator and President Barack Obama's history with Supreme Court nominees, built with Vue.js. [View working component](https://sean-kelliher-obama-scotus.netlify.app).
 
 ## Project Status
 
@@ -9,10 +9,10 @@ Next steps, I want to do more extensive accessibility and browser testing.
 
 ## Project Screen Shots
 
-* Justice Roberts
+* President Obama and Justices (default view)
 ![screen shot of project](/screenshots/obama-scotus-screenshot1.png?s=600)
 
-* Justice Alito
+* Justice Roberts
 ![screen shot of project](/screenshots/obama-scotus-screenshot2.png?s=600)
 
 * Justice Sotomayor
@@ -36,13 +36,14 @@ Visit the localhost port displayed in the terminal after running `npm run dev`.
 
 ## Reflection
 
-I set out to build a component that lets users learn about Barack Obama's history with Supreme Court nominees. Before designing and coding, I needed to gather information, write accurate descriptions, and find photographs that I could legally use. Once building, technical challenges included deciding how much animation to use (less turned out to be more) and keeping images stationary when the amount of accompanying text differed with each scene.
+I set out to build a component that lets users learn about Barack Obama's history with Supreme Court nominees. Before designing and coding, I needed to gather information, write accurate descriptions, and find photographs that I could legally use. Once building, technical challenges included deciding how much animation to use; keeping images stationary when the amount of accompanying text differed with each scene; and passing WACG accessibility requirements where controls needed to function without a mouse. With animation, a few fades worked well; more animation looked excessive. For keeping images stationary, applying minimum heights to the containers for text worked well. Meeting WACG standards took numerous rounds of testing with Firefox's Developer Tools. Using tags such as button over figure and relying on a browser's native functionality proved a better route than manually adding attributes like "tabindex=0" and "keyup.enter."
 
 ## Acknowledgments
 
 * Supreme Court history from [Wikipedia](https://www.wikipedia.org).
 * Photos from numerous sources. Details in [NOTES.txt](https://github.com/seankelliher/obama-scotus/blob/master/NOTES.txt).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
-* JavaScript guidance from [JSLint](http://jslint.com) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference).
-* Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/trends). Icons from Material Design as well.
+* Linting guidance from [ESLint](https://eslint.org) and [Stylelint](https://stylelint.io).
+* Design guidance and icons from Google's [Material Design](https://material.io/design).
+* WACG guidance from [Firefox's Developer Tools](https://firefox-source-docs.mozilla.org/devtools-user/#).
 * Shields from [Shields](https://shields.io).
