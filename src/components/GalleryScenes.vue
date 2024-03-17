@@ -14,7 +14,7 @@ function checkCount(action) {
         if (count.value !== 0) {
             count.value = count.value - 1;
         } else if (count.value === 0) {
-            count.value = 9;
+            count.value = 9; // If adding/removing scenes, adjust count.value.
         }
     } else if (action === "increment") {
         if (count.value !== 9) {
@@ -34,17 +34,17 @@ function checkCount(action) {
                 class="nav-icon"
                 @click="checkCount('decrement')"
             >
-                <img src="/images/chevron-left-icon-24.svg" alt="previous icon">
-                
+                <img src="/images/chevron-left-icon-24.svg" alt="previous icon">  
             </button>
+
              <button
                 class="nav-icon"
                 @click="checkCount('increment')"
             >
                 <img src="/images/chevron-right-icon-24.svg" alt="next icon">
-                
             </button>
         </nav>
+
         <div class="pano-container">
             <figure class="pano">
                 <img
