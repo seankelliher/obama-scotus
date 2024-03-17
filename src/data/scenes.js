@@ -149,7 +149,7 @@ const scenes = [
         ].join(" "),
         thumbImage: "obama-departs-white-house",
         thumbAlt: "Barack Obama looks down on White House from Marine One",
-        thumbCaption: "Obama departs, Jan. 20, 2017. Photo: Pete Souza."
+        thumbCaption: "Jan. 20, 2017. Photo: Pete Souza."
     }
 ];
 
