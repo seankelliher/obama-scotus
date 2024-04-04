@@ -5,7 +5,7 @@ Gallery of Senator and President Barack Obama's history with Supreme Court nomin
 
 ## Project Status
 
-Next steps, I want to do more extensive accessibility and browser testing.
+Project meets general accessibility (WACG) and cross-browser requirements. More testing with a dedicated services (e.g., Sauce Labs) would be helpful if deploying to production.
 
 ## Project Screen Shots
 
