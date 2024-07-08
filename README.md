@@ -5,7 +5,7 @@ Gallery of Senator and President Barack Obama's history with Supreme Court nomin
 
 ## Project Status
 
-RENOVATING: Basic structure done. Need to make responsive, add WACG.
+**UNDER RENOVATION:** Basic structure updated. To do: fix page load flicker, add responsiveness, add WACG.
 
 ## Project Screen Shots
 
