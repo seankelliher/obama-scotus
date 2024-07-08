@@ -1,278 +1,157 @@
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
 body {
-    background: #f6fafe;
+    background: #fffbff;
+    margin-top: 0;
 }
 
+/* Image becomes no larger than actual size. */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-.container {
+#container {
     width: 100%;
-    max-width: 834px;
-    margin: 2em auto;
-    padding: 1em 0;
-    border: 1px solid #dfe3e7;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /* main axis */
-    align-items: flex-start; /* cross axis */
-}
-
-nav {
-    width: 90%;
-    margin-bottom: 1em;
-    padding: 0.25em 5%;
-    flex: initial; /* flex: 0 1 auto */
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end; /* main axis */
-    align-items: center; /* cross axis */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #41484d;
-}
-
-/* Previous and next icons */
-button.nav-icon {
-    width: 24px;
-    margin: 0 5px;
+    height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 0;
-    background: rgba(242 242 242 / 90%);
-    border: 1px solid #dfe3e7;
-    cursor: pointer;
-}
-
-.pano-container {
-    width: 90%;
-    margin: 0 5%;
-    padding: 0;
-    flex: initial; /* flex: 0 1 auto */
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /* main axis */
-    align-items: flex-start; /* cross axis */
-    position: relative;
-}
-
-figure.pano {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    flex: initial; /* flex: 0 1 auto */
-}
-
-figcaption {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #41484d;
-    margin-top: 0.25em;
-}
-
-/* Forward and Replay icons */
-button.pano-icon {
-    width: 32px;
-    height: 32px;
-    margin: 0;
-    padding: 0;
-    background: rgba(242 242 242 / 90%);
-    border: none;
-    border-radius: 50%;
-    position: absolute;
-    top: 15px;
-    right: 5px;
-    transform: translate(-15px, -5px);
-    cursor: pointer;
-    flex: initial; /* flex: 0 1 auto */
-    display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center; /* main axis */
-    align-items: center; /* cross axis */
+    align-items: flex-start; /* cross axis */
 }
 
-/* Animation to fade in pano icons */
-.fade {
-    animation: fade 2s ease-in-out;
+header {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+    text-align: center;
+    flex: initial;
 }
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-main {
+.thumbs {
     width: 90%;
     margin: 0;
     padding: 1em 5%;
-    flex: initial; /* flex: 0 1 auto */
+    flex: initial;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around; /* main axis */
     align-items: flex-start; /* cross axis */
-}
-
-section {
-    margin: 0;
-    padding: 0;
-    flex: initial; /* flex: 0 1 auto */
-}
-
-aside {
-    margin: 0;
-    padding: 0;
-    flex: initial; /* flex: 0 1 auto */
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; /* main axis */
-    align-items: flex-start; /* cross axis */
-}
-
-@media (min-width: 300px) and (max-width: 399px) {
-    main {
-        justify-content: center; /* main axis */
-    }
-
-    section {
-        width: 100%;
-        height: 12em;
-    }
-
-    aside {
-        width: 50%;
-    }
-}
-
-@media (min-width: 400px) and (max-width: 499px) {
-    main {
-        justify-content: center; /* main axis */
-    }
-
-    section {
-        width: 100%;
-        height: 12em;
-    }
-
-    aside {
-        width: 40%;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 599px) {
-    main {
-        justify-content: space-between; /* main axis */
-    }
-
-    section {
-        width: 60%;
-        height: 15em;
-    }
-
-    aside {
-        width: 35%;
-    }
-}
-
-@media (min-width: 600px) {
-    main {
-        justify-content: space-between; /* main axis */
-    }
-
-    section {
-        width: 70%;
-        min-height: 12em;
-    }
-
-    aside {
-        width: 25%;
-    }
 }
 
 .thumb {
-    width: 100%;
-    max-width: 200px;
+    width: 10%;
     margin: 0;
     padding: 0;
-    flex: initial; /* flex: 0 1 auto */
+    flex: initial;
 }
 
-/* Fonts */
+.thumb:hover {
+    cursor: pointer;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background: #000;
+  text-align: center;
+  padding: 0;
+  border-radius: 8px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  bottom: -15px;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+section {
+    width: 90%;
+    margin: 0;
+    padding: 2em 5%;
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; /* main axis */
+    align-items: center; /* cross axis */
+}
+
+.sidebar {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    flex: initial;
+}
+
+.large {
+    width: 70%;
+    margin: 0;
+    padding: 0%;
+    flex: initial;
+}
+
+/* Font styles and their media queries */
+figcaption {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em; /* 16px */
+    line-height: 1.5;
+    font-weight: 400;
+    color: #41484d;
+}
+
+.tooltiptext {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+}
+
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-size: 1.125em; /* 18 px */
     line-height: 1.8;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-    color: #181c1f;
+    font-weight: 400;
+    color: #201b17;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    line-height: 1.8;
+    font-weight: 600;
+    font-style: italic;
+    color: #201b17;
 }
 
 h2 {
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-weight: 700;
-    font-style: italic;
-    line-height: 1.4;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    color: #181c1f;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #201b17;
 }
 
+/* Media queries for fonts */
 @media (min-width: 300px) and (max-width: 399px) {
-    p {
-        font-size: 0.8125em; /* 13px */
-    }
-
-    nav {
+    .tooltiptext {
         font-size: 0.75em; /* 12px */
     }
 
-    figcaption {
-        font-size: 0.75em; /* 12px */
-        height: 2.25em; /* 36px */
-    }
-
-    h2 {
-        font-size: 0.9375em; /* 15px */
-    }
-}
-
-@media (min-width: 400px) and (max-width: 499px) {
-    p {
-        font-size: 0.875em; /* 14px */
-    }
-
-    nav {
-        font-size: 0.8125em; /* 13px */
-    }
-
-    figcaption {
-        font-size: 0.8125em; /* 13px */
-        height: 2.375em /* 38px */
-    }
-
-    h2 {
-        font-size: 1em; /* 16px */
-    }
-}
-
-@media (min-width: 500px) and (max-width: 599px) {
-    p {
-        font-size: 0.9375em; /* 15px */
-    }
-
-    nav {
-        font-size: 0.875em; /* 14px */
-    }
-
-    figcaption {
-        font-size: 0.875em; /* 14px */
-        height: 2.625em; /* 42px */
+    h1 {
+        font-size: 1.3125em; /* 21px */
     }
 
     h2 {
@@ -280,21 +159,44 @@ h2 {
     }
 }
 
-@media (min-width: 600px) {
-    p {
-        font-size: 1em; /* 16px */
+@media (min-width: 400px) and (max-width: 499px) {
+    .tooltiptext {
+        font-size: 0.75em; /* 12px */
     }
 
-    nav {
-        font-size: 0.9375em; /* 15px */
-    }
-
-    figcaption {
-        font-size: 0.9375em; /* 15px */
-        height: 2.75em /* 44px */
+    h1 {
+        font-size: 1.375em; /* 22px */
     }
 
     h2 {
-        font-size: 1.125em; /* 18px */
+        font-size: 1.125em; /* 18 px */
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    .tooltiptext {
+        font-size: 0.75em; /* 12px */
+    }
+
+    h1 {
+        font-size: 1.4375em; /* 23px */
+    }
+
+    h2 {
+        font-size: 1.1875em; /* 19px */
+    }
+}
+
+@media (min-width: 600px) {
+    .tooltiptext {
+        font-size: 0.75em; /* 12px */
+    }
+
+    h1 {
+        font-size: 1.5em; /* 24px */
+    }
+
+    h2 {
+        font-size: 1.25em; /* 20px */
     }
 }
