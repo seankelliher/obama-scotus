@@ -5,6 +5,62 @@ export const store = reactive({
     changeDisplay(s) {
         store.display = s;
     },
+    thumbs: [
+        {
+            thumbScr: "barack-obama-portrait",
+            thumbAlt: "official portrait, Barack Obama as Senator",
+            caption: "Barack Obama. Photo: Pete Souza",
+            toolTip: "Barack Obama"
+        },
+        {
+            thumbScr: "john-roberts-portrait",
+            thumbAlt: "official portrait, John Roberts",
+            caption: "John Roberts. Photo: Steve Petteway",
+            toolTip: "John Roberts"
+        },
+        {
+            thumbScr: "samuel-alito-portrait",
+            thumbAlt: "official portrait, Samuel Alito",
+            caption: "Samuel Alito. Photo: Steve Petteway",
+            toolTip: "Samuel Alito"
+        },
+        {
+            thumbScr: "sonia-sotomayor-portrait",
+            thumbAlt: "official portrait, Sonia Sotomayor",
+            caption: "Sonia Sotomayor. Photo: Steve Petteway",
+            toolTip: "Sonia Sotomayo"
+        },
+        {
+            thumbScr: "elena-kagan-portrait",
+            thumbAlt: "official portrait, Elena Kagan",
+            caption: "Elena Kagan. Photo: Steve Petteway",
+            toolTip: "Elena Kagan"
+        },
+        {
+            thumbScr: "antonin-scalia-portrait",
+            thumbAlt: "official portrait, Antonin Scalia",
+            caption: "Antonin Scalia. Photo: Steve Petteway",
+            toolTip: "Antonin Scalia"
+        },
+        {
+            thumbScr: "merrick-garland-portrait",
+            thumbAlt: "official portrait, Merrick Garland",
+            caption: "Merrick Garland. Photo: Court of Appeals, DC Circuit",
+            toolTip: "Merrick Garland"
+        },
+        {
+            thumbScr: "mitch-mcconnell-portrait",
+            thumbAlt: "official portrait, Mitch McConnell",
+            caption: "Mitch McConnell. Photo: Senator's staff",
+            toolTip: "Mitch McConnell"
+        },
+        {
+            thumbScr: "neil-gorsuch-portrait",
+            thumbAlt: "official portrait, Neil Gorsuch,",
+            caption: "Neil Gorsuch. Photo: Franz Jantzen",
+            toolTip: "Neil Gorsuch"
+        }
+    ],
     scenes: [
         {
             heading: "Barack Obama",
