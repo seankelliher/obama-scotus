@@ -14,6 +14,12 @@ import { store } from "../store.js";
                     :src="`/images/${store.thumbs[index].thumbScr}.jpg`"
                     :alt="`${store.thumbs[index].thumbAlt}`"
                 >
+                <div
+                    class="circle"
+                    v-if="store.display === index"
+                >
+                    <img src="/images/check-circle-20.svg" alt="circle">
+                </div>
                 <figcaption hidden>{{ store.thumbs[index].caption }}</figcaption>
                 <span class="tooltiptext">{{ store.thumbs[index].toolTip }}</span>
         </figure>
