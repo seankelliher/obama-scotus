@@ -8,7 +8,9 @@ import { store } from "../store.js";
                 class="thumb tooltip"
                 v-for="(thumb, index) in store.thumbs"
                 :key="thumb.thumbScr"
+                tabindex="0"
                 @click="store.changeDisplay(index)"
+                @keyup.enter="store.changeDisplay(index)"
             >
                 <img
                     :src="`/images/${store.thumbs[index].thumbScr}.jpg`"
