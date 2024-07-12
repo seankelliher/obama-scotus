@@ -1,11 +1,11 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
 # Obama and Supreme Court Nominees
 
-Gallery of Senator and President Barack Obama's history with Supreme Court nominees, built with Vue.js. [View working component](https://sean-kelliher-obama-scotus.netlify.app).
+Interactive gallery about Barack Obama's history with Supreme Court nominees. This project is built with Vue.js, with data stored locally in objects. [View working component](https://sean-kelliher-obama-scotus.netlify.app).
 
 ## Project Status
 
-**UNDER RENOVATION:** Basic structure updated. To do: fix page load flicker, add responsiveness, add WACG.
+Project meets general accessibility (WACG) and cross-browser requirements. More testing with a dedicated services (e.g., Sauce Labs) would be helpful if deploying to production.
 
 ## Project Screen Shots
 
@@ -33,10 +33,6 @@ To Run Vue:
 To Visit App:
 
 Visit the localhost port displayed in the terminal after running `npm run dev`.
-
-## Reflection
-
-I set out to build a component that lets users learn about Barack Obama's history with Supreme Court nominees. Before designing and coding, I needed to gather information, write accurate descriptions, and find photographs that I could legally use. Once building, technical challenges included deciding how much animation to use; keeping images stationary when the amount of accompanying text differed with each scene; and passing WACG accessibility requirements where controls needed to function without a mouse. With animation, a few fades worked well; more animation looked excessive. For keeping images stationary, applying heights to specific elements worked well. Meeting WACG standards took numerous rounds of testing with Firefox's Developer Tools. Using tags such as button over figure and relying on a browser's native functionality proved a better route than manually adding attributes like "tabindex=0" and "keyup.enter."
 
 ## Acknowledgments
 
