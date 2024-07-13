@@ -14,7 +14,6 @@ img {
     width: 100%;
     max-width: 1280px;
     height: auto;
-    /*min-height: 100vh;*/
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -123,6 +122,13 @@ header {
 }
 
 /* Tooltip text */
+.tooltiptext {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+}
+
 .tooltip .tooltiptext {
     width: 100%;
     margin: 0;
@@ -238,13 +244,6 @@ figcaption {
     line-height: 1.5;
     font-weight: 400;
     color: #41484d;
-}
-
-.tooltiptext {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color: #fff;
 }
 
 p {
