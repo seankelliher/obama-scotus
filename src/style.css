@@ -1,6 +1,6 @@
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
 body {
-    background: #fffbff;
+    background: #f9f9ff; /* N-98 */
 }
 
 /* Image becomes no larger than actual size. */
@@ -243,7 +243,7 @@ figcaption {
     font-size: 1em; /* 16px */
     line-height: 1.5;
     font-weight: 400;
-    color: #41484d;
+    color: #43474e; /* NV-30 */
 }
 
 p {
@@ -251,7 +251,7 @@ p {
     font-size: 1.125em; /* 18 px */
     line-height: 1.8;
     font-weight: 400;
-    color: #201b17;
+    color: #191c20; /* N-10 */
 }
 
 h1 {
@@ -259,14 +259,14 @@ h1 {
     line-height: 1.4;
     font-weight: 600;
     font-style: italic;
-    color: #201b17;
+    color: #191c20; /* N-10 */
 }
 
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.1;
     font-weight: 600;
-    color: #201b17;
+    color: #191c20; /* N-10 */
 }
 
 /* Media queries for fonts */
