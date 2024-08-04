@@ -13,12 +13,12 @@ img {
 #container {
     width: 100%;
     max-width: 1280px;
-    height: auto;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start; /* main axis */
+    justify-content: center; /* main axis */
     align-items: flex-start; /* cross axis */
 }
 
@@ -244,6 +244,7 @@ figcaption {
     line-height: 1.5;
     font-weight: 400;
     color: #43474e; /* NV-30 */
+    min-height: 3em; /* Keeps content v-centered, if caption  1 or 2 lines. */
 }
 
 p {
