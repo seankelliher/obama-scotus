@@ -1,11 +1,11 @@
 [![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/banner-obama-scotus?style=flat-square)](/LICENSE.txt)
 # Obama and Supreme Court Nominees
 
-Interactive gallery about Barack Obama's history with Supreme Court nominees. This project is built with Vue.js, with data stored locally in objects. [View working component](https://sean-kelliher-obama-scotus.netlify.app).
+BEING RENOVATED. Interactive gallery about Barack Obama's history with Supreme Court nominees. This project is built with Vue.js, with data stored locally in objects. [View working component](https://sean-kelliher-obama-scotus.netlify.app).
 
 ## Project Status
 
-Project meets general accessibility (WACG) and cross-browser requirements. More testing with a dedicated services (e.g., Sauce Labs) would be helpful if deploying to production.
+BEING RENOVATED.
 
 ## Project Screen Shots
 
