@@ -1,14 +1,12 @@
 <script setup>
-import HeaderPart from "./components/HeaderPart.vue";
-import ThumbImages from "./components/ThumbImages.vue";
-import ScenesPart from "./components/ScenesPart.vue";
+import FullWidth from "./components/FullWidth.vue";
+import ContentBoxes from "./components/ContentBoxes.vue";
 </script>
 
 <template>
     <div id="container">
-        <HeaderPart />
-        <ThumbImages />
-        <ScenesPart />
+        <FullWidth />
+        <ContentBoxes />
     </div>
 </template>
 
