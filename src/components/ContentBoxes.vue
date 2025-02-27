@@ -30,6 +30,7 @@ onMounted(() => {
             <div
                 :id="`${scene.id}`"
                 class="content-box"
+                :class="{ sticky: scene.sticky }"
             >
                 <figure class="portrait">
                     <img :src="`images/${scene.portScr}.jpg`" :alt="`${scene.alt}`">

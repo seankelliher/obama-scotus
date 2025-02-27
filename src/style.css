@@ -124,7 +124,11 @@ figure.portrait {
     width: 25%;
     margin: 0;
     padding: 0;
+}
 
+.sticky {
+    position: sticky;
+    top: 2em;
 }
 
 /* FONTS */
