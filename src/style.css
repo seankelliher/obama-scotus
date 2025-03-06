@@ -29,7 +29,6 @@ img {
     align-items: flex-start;
 }
 
-/* Pano elements */
 .full-width-container {
     width: 100%;
     margin: 0 auto;
@@ -39,12 +38,6 @@ img {
     top: 0;
     z-index: -1;
 }
-
-/*@media (min-width: 600px) {
-    .pano {
-        position: relative;
-    }
-}*/
 
 figure.full-width {
     width: 100vw;
@@ -72,12 +65,12 @@ figure.full-width {
     width: 100vw;
 }
 
-@media (min-width: 960px) {
+/*@media (min-width: 960px) {
     .full-width-img {
         height: 100vh;
         object-fit: cover;
     }
-}
+}*/
 
 .full-width-caption {
     margin: 0 5%;
@@ -107,10 +100,11 @@ section {
     margin: 0;
     padding: 0.75em;
     background: #f6fafe;
+    border-radius: 12px;
     flex: initial;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -129,6 +123,78 @@ figure.portrait {
 .sticky {
     position: sticky;
     top: 2em;
+}
+
+@media (min-width:300px) and (max-width:959px) {
+    figure.full-width {
+            height: auto;
+    }
+
+    .full-width-img {
+        height: auto;
+    }
+
+    .full-width-caption {
+        padding: 0;
+        background: none;
+        position: static;
+        display: block;
+    }
+
+    section {
+        height: 120vh;
+    }
+
+    .content-box {
+        width: 80%;
+        padding: 0.75em;
+    }
+
+    .content-box-text {
+        width: 65%;
+    }
+
+    figure.portrait {
+        width: 25%;
+    }
+
+}
+
+@media (min-width:960px) {
+    figure.full-width {
+            height: 100vh;
+    }
+
+    .full-width-img {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .full-width-caption {
+        padding: 0.5em 0.75em;
+        background: #f6fafe;
+        position: absolute;
+        bottom: 2em;
+        display: inline-block;
+        z-index: 999;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    .content-box {
+        width: 50%;
+        padding: 0.75em;
+    }
+
+    .content-box-text {
+        width: 65%;
+    }
+
+    figure.portrait {
+        width: 25%;
+    }
 }
 
 /* FONTS */
