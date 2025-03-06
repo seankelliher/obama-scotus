@@ -9,6 +9,7 @@
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
 body {
     margin-top: 0;
+    margin-bottom: 0;
     background: #f6fafe;
 }
 
@@ -41,7 +42,7 @@ img {
 
 figure.full-width {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     padding: 0;
     position: relative;
@@ -63,28 +64,15 @@ figure.full-width {
 
 .full-width-img {
     width: 100vw;
+    object-fit: cover;
 }
-
-/*@media (min-width: 960px) {
-    .full-width-img {
-        height: 100vh;
-        object-fit: cover;
-    }
-}*/
 
 .full-width-caption {
     margin: 0 5%;
-    padding: 0.5em 0.75em;
-    background: #f6fafe;
-    position: absolute;
-    bottom: 2em;
-    display: inline-block;
-    z-index: 999;
 }
 
 section {
     width: 90%;
-    height: 120vh;
     margin: 0;
     padding: 0 5%;
     flex: initial;
@@ -96,20 +84,17 @@ section {
 }
 
 .content-box {
-    width: 50%;
     margin: 0;
     padding: 0.75em;
     background: #f6fafe;
-    border-radius: 12px;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 4px #ebeff2);
     flex: initial;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .content-box-text {
-    width: 65%;
     margin: 0;
     padding: 0;
 }
@@ -120,12 +105,18 @@ figure.portrait {
     padding: 0;
 }
 
+/* Used to make last scene sticky */
 .sticky {
     position: sticky;
     top: 2em;
 }
 
+/* Media Queries */
 @media (min-width:300px) and (max-width:959px) {
+    section {
+        height: 100vh;
+    }
+
     figure.full-width {
             height: auto;
     }
@@ -141,13 +132,30 @@ figure.portrait {
         display: block;
     }
 
-    section {
-        height: 120vh;
-    }
-
     .content-box {
         width: 80%;
-        padding: 0.75em;
+    }
+}
+
+@media (min-width:300px) and (max-width:599px) {
+    .content-box {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .content-box-text {
+        width: 100%;
+    }
+
+    figure.portrait {
+        width: 40%;
+    }
+}
+
+@media (min-width:600px) and (max-width:959px) {
+    .content-box {
+        justify-content: space-between;
+        align-items: center;
     }
 
     .content-box-text {
@@ -157,8 +165,8 @@ figure.portrait {
     figure.portrait {
         width: 25%;
     }
-
 }
+
 
 @media (min-width:960px) {
     figure.full-width {
@@ -167,7 +175,6 @@ figure.portrait {
 
     .full-width-img {
         height: 100vh;
-        object-fit: cover;
     }
 
     .full-width-caption {
@@ -185,15 +192,16 @@ figure.portrait {
 
     .content-box {
         width: 50%;
-        padding: 0.75em;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .content-box-text {
-        width: 65%;
+        width: 65%; /* same as 600 - 959px */
     }
 
     figure.portrait {
-        width: 25%;
+        width: 25%; /* same as 600 - 959px */
     }
 }
 
