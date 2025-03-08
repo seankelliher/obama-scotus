@@ -260,7 +260,11 @@ h1 {
     font-style: normal;
     font-size: var(--fs2);
     line-height: 1.5;
-    color: #fff;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background: #f9f9ff; /* surface */
+    color: #191c20; /* on surface */
+    display: inline-block;
 }
 
 h2 {
