@@ -54,7 +54,9 @@ onMounted(() => {
                 <figure
                     class="replay-icon"
                     v-if="scene.sticky"
+                    tabindex="0"
                     @click="store.replayScenes()"
+                    @keydown.enter="store.replayScenes()"
                 >
                     <img src="/images/replay-icon-24.svg" alt="replay icon">
                 </figure>
