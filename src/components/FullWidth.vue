@@ -19,10 +19,8 @@ import { store } from "../store.js";
             <figcaption class="full-width-caption">
                 {{ store.scenes[store.fullWidth].fullCap }}
             </figcaption>
-
         </figure>
     </div>
-
 </template>
 
 <style scoped>
