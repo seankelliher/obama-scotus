@@ -5,6 +5,10 @@ export const store = reactive({
     changeFullWidth(s) {
         store.fullWidth = s - 1;
     },
+    replayScenes() {
+        store.fullWidth = 0;
+        window.scrollTo(0, 0);
+    },
     scenes: [
         {
             id: 1,
