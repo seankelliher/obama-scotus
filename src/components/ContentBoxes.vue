@@ -50,7 +50,15 @@ onMounted(() => {
                     <figcaption>{{ scene.portCap }}</figcaption>
                 </figure>
                 <div class="content-box-text">
-                    <p><span v-if="scene.title !== ''">{{ scene.title}} - </span>{{ scene.contentText }}</p>
+                    <p>
+                        <span
+                            v-if="scene.title !== ''"
+                            class="emphasis"
+                        >
+                            {{ scene.title}}:&nbsp;
+                        </span>
+                        {{ scene.contentText }}
+                    </p>
                 </div>
                 <div
                     class="replay-box"
