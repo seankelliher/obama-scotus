@@ -1,9 +1,9 @@
-/* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1280,20,1.125,2,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.25,1280,20,1.25,2,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 :root {
-  --fs-1: clamp(0.8889rem, 0.8148rem + 0.3704vw, 1.1111rem);
+  --fs-1: clamp(0.8rem, 0.7333rem + 0.3333vw, 1rem);
   --fs0: clamp(1rem, 0.9167rem + 0.4167vw, 1.25rem);
-  --fs1: clamp(1.125rem, 1.0313rem + 0.4688vw, 1.4063rem);
-  --fs2: clamp(1.2656rem, 1.1602rem + 0.5273vw, 1.582rem);
+  --fs1: clamp(1.25rem, 1.1458rem + 0.5208vw, 1.5625rem);
+  --fs2: clamp(1.5625rem, 1.4323rem + 0.651vw, 1.9531rem);
 }
 
 /* Stylesheet uses Level 3 Media Queries. Level 4 coverage still spotty. */
@@ -246,7 +246,7 @@ figure.replay-icon:hover {
     }
 
     .content-box-text  {
-        width: 60%;
+        width: 65%;
     }
 
     h2 {
@@ -269,7 +269,7 @@ figure.replay-icon:hover {
     }
 
     .content-box-text  {
-        width: 60%;
+        width: 65%;
     }
 
     h2 {
@@ -310,6 +310,10 @@ p {
     line-height: 1.5;
     margin-top: 0.25em;
     color: #191c20; /* on surface */
+}
+
+.emphasis {
+    font-weight: 600;
 }
 
 figcaption {
