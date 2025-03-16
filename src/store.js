@@ -125,7 +125,7 @@ export const store = reactive({
             fullAlt: "United States Supreme Court Building under a blue sky",
             fullCap: "Supreme Court Building, Washington, DC. Photo: Pacamah",
             contentTitle: "Legacy",
-            contentText: "After leaving office, Barack Obama returns to Chicago. His nominees Elena Kagan and Sonia Sotomayor continue as Justices on the Supreme Court. Merrick Garland, who was nominated but never confirmed continues stays at the US Court of Appeals in DC until 2021 when President Biden makes him US Attorney General.",
+            contentText: "After leaving office, Barack Obama returns to Chicago. His nominees Elena Kagan and Sonia Sotomayor continue as Justices on the Supreme Court. Merrick Garland, who was nominated but never confirmed stays at the US Court of Appeals in DC until 2021 when President Biden makes him US Attorney General.",
             portScr: "barack-obama-portrait",
             portAlt: "official portrait, Barack Obama as Senator",
             portCap: "Pete Souza"
