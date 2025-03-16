@@ -8,7 +8,7 @@ import { store } from "../store.js";
             v-if="store.fullWidth === 0"
             class="full-width-title"
         >
-            <h1>The Nominees</h1>
+            <h1>Nominees</h1>
         </div>
         <figure class="full-width">
             <picture>
