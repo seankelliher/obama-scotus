@@ -90,7 +90,11 @@ section {
     z-index: 1;
 }
 
-section:last-child {
+section:first-of-type {
+    margin-top: 0;
+}
+
+section:last-of-type {
     margin-bottom: 20vh;
 }
 
