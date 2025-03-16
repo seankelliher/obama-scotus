@@ -6,7 +6,7 @@ import { onMounted } from "vue";
 function readyReplayIcon() {
     window.addEventListener("scroll", function() {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-            const icon = document.querySelector(".replay-icon");
+            const icon = document.querySelector(".replay-box");
             icon.classList.add("fade");
         }
     });
@@ -27,7 +27,7 @@ onMounted(() => {
                 }
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0 });
 
     callouts.forEach(callout => observer.observe(callout));
 });
@@ -41,27 +41,35 @@ onMounted(() => {
             <div
                 :id="`${scene.id}`"
                 class="content-box"
-                :class="{ sticky: scene.sticky }"
-            >
+            >   
+                <div class="content-box-title">
+                    <h2>{{ scene.contentTitle }}</h2>
+                </div>
                 <figure class="portrait">
                     <img :src="`images/${scene.portScr}.jpg`" :alt="`${scene.alt}`">
                     <figcaption>{{ scene.portCap }}</figcaption>
                 </figure>
                 <div class="content-box-text">
-                    <h2>{{ scene.contentTitle }}</h2>
-                    <p>{{ scene.contentText }}</p>
+                    <p><span v-if="scene.title !== ''">{{ scene.title}} - </span>{{ scene.contentText }}</p>
                 </div>
-                <figure
-                    class="replay-icon"
-                    v-if="scene.sticky"
-                    tabindex="0"
-                    @click="store.replayScenes()"
-                    @keydown.enter="store.replayScenes()"
+                <div
+                    class="replay-box"
+                    v-if="scene.id === 10"
                 >
-                    <img src="/images/replay-icon-24.svg" alt="replay icon">
-                </figure>
+                    <figure
+                        class="replay-icon"
+                        tabindex="0"
+                        @click="store.replayScenes()"
+                        @keydown.enter="store.replayScenes()"
+                    >
+                        <img src="/images/replay-icon-24.svg" alt="replay icon">
+                        <figcaption>&nbsp;Watch again</figcaption>
+                    </figure>
+                </div>
             </div>
+
         </section>
+
 </template>
 
 <style scoped>
