@@ -45,10 +45,6 @@ onMounted(() => {
                 <div class="content-box-title">
                     <h2>{{ scene.contentTitle }}</h2>
                 </div>
-                <figure class="portrait">
-                    <img :src="`images/${scene.portScr}.jpg`" :alt="`${scene.alt}`">
-                    <figcaption>{{ scene.portCap }}</figcaption>
-                </figure>
                 <div class="content-box-text">
                     <p>
                         <span
@@ -60,6 +56,10 @@ onMounted(() => {
                         {{ scene.contentText }}
                     </p>
                 </div>
+                <figure class="portrait">
+                    <img :src="`images/${scene.portScr}.jpg`" :alt="`${scene.alt}`">
+                    <figcaption>{{ scene.portCap }}</figcaption>
+                </figure>
                 <div
                     class="replay-box"
                     v-if="scene.id === 10"
