@@ -58,11 +58,7 @@ onMounted(() => {
                 </div>
                 <figure class="portrait">
                     <img :src="`images/${scene.portScr}.jpg`" :alt="`${scene.alt}`">
-<<<<<<< HEAD
                     <figcaption class="portrait-caption">{{ scene.portCap }}</figcaption>
-=======
-                    <figcaption>{{ scene.portCap }}</figcaption>
->>>>>>> 309cb18ef1a2984acd47aee775c2664db86d4f7a
                 </figure>
                 <div
                     class="replay-box"
