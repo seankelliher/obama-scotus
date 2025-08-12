@@ -3,13 +3,23 @@ import { store } from "../store.js";
 import { onMounted } from "vue";
 
 // Monitor scrolling on last scene. At end of page, fade in "replay" icon.
-function readyReplayIcon() {
+function showReplayIcon() {
     window.addEventListener("scroll", function() {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             const icon = document.querySelector(".replay-box");
             icon.classList.add("fade");
         }
     });
+}
+
+// Hide "replay" icon if not last scene.
+function hideReplayIcon() {
+    const icon = document.querySelector(".replay-box");
+    const check = icon.classList.contains("fade");
+
+    if (check === true) {
+        icon.classList.remove("fade");
+    }
 }
 
 onMounted(() => {
@@ -23,7 +33,9 @@ onMounted(() => {
 
                 // If it's the last scene, invoke function.
                 if (entry.target.id === "10") {
-                    readyReplayIcon();
+                    showReplayIcon();
+                } else {
+                    hideReplayIcon()
                 }
             }
         });
