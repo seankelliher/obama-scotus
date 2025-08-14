@@ -10,6 +10,13 @@ function showReplayIcon() {
             icon.classList.add("fade");
         }
     });
+
+    // Stops last content box in vertical middle of screen.
+    const last = document.getElementById("10");
+    const cHeight = last.clientHeight;
+    const wHeight = window.innerHeight;
+    const diff = (wHeight- cHeight) / 2;
+    last.parentElement.style.marginBottom = `${diff}px`;
 }
 
 // Hide "replay" icon if not last scene.

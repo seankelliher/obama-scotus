@@ -75,7 +75,7 @@ figure.full-width  {
     margin: 0;
     padding: 0.25em 5vw;
     color: #fff;
-    background: rgba(0 0 0 / 80%);
+    background: rgb(0 0 0 / 80%);
     position: fixed;
     left: 0;
     bottom: 0;
@@ -97,9 +97,7 @@ section:first-of-type {
     margin-top: 0;
 }
 
-section:last-of-type {
-    margin-bottom: 20vh;
-}
+/* NOTE: margin-bottom of last-of-type section, set by JavaScript */
 
 .content-box {
     margin: 0;
