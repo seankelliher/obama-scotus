@@ -8,6 +8,7 @@ export const store = reactive({
     replayScenes() {
         store.fullWidth = 0;
         window.scrollTo(0, 0);
+        window.location.reload(false); // false, reload from cache, if available.
     },
     scenes: [
         {
