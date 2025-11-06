@@ -12,11 +12,20 @@ import { store } from "../store.js";
         </div>
         <figure class="full-width">
             <picture>
-                <source media="(min-width: 300px) and (max-width: 499px)" :srcset="`images/${store.scenes[store.fullWidth].fullSrc}-sm.jpg`">
-                <source media="(min-width: 500px) and (max-width: 799px)" :srcset="`images/${store.scenes[store.fullWidth].fullSrc}-md.jpg`">
-                <source media="(min-width: 800px)" :srcset="`images/${store.scenes[store.fullWidth].fullSrc}.jpg`">
+                <source
+                    :srcset="`images/${store.scenes[store.fullWidth].fullSrc}-lg.jpg`"
+                    media="(min-width: 800px)"
+                >
+                <source
+                    :srcset="`images/${store.scenes[store.fullWidth].fullSrc}-md.jpg`"
+                    media="(min-width: 500px)"
+                >
+                <source
+                    :srcset="`images/${store.scenes[store.fullWidth].fullSrc}-sm.jpg`"
+                    media="(min-width: 300px)"
+                >
                 <img
-                    :src="`images/${store.scenes[store.fullWidth].fullSrc}.jpg`"
+                    :src="`images/${store.scenes[store.fullWidth].fullSrc}-lg.jpg`"
                     :alt="`${store.scenes[store.fullWidth].fullAlt}`"
                     class="full-width-img"
                 >  
